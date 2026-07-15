@@ -1,0 +1,17 @@
+{
+  "data_servizio": "2026-07-14",
+  "fascia_oraria": "07:00:00-20:00:00",
+  "linee_urbane_nella_circoscrizione": "1,13,16,3,5,5/,6,CM",
+  "linee_extraurbane_nella_circoscrizione": "B103,B116,B401,B402,B403,B450,B512",
+  "numero_linee_pertinenti": 19,
+  "numero_fermate_interne": 31,
+  "numero_fermate_esterne_accessibili": 32,
+  "numero_sezioni": 95,
+  "sezioni_entro_5_min": 38,
+  "sezioni_entro_10_min": 58,
+  "sezioni_entro_15_min": 69,
+  "popolazione_totale": 8327.0,
+  "popolazione_entro_5_min": 4836.0,
+  "popolazione_entro_10_min": 6707.0,
+  "popolazione_entro_15_min": 6963.0
+}

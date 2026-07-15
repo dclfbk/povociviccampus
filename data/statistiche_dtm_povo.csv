@@ -1,0 +1,14 @@
+indicatore,valore
+crs,EPSG:25832
+risoluzione_x_m,1.0
+risoluzione_y_m,1.0
+pixel_validi,15432512
+area_raster_valida_m2,15432512.0
+quota_min_m,229.21600341796875
+quota_media_m,769.2845507584211
+quota_mediana_m,732.552001953125
+quota_max_m,1737.4630126953125
+pendenza_media_gradi,23.21735833826296
+pendenza_mediana_gradi,22.36252644360108
+pendenza_p90_gradi,41.89106632949079
+pendenza_max_gradi,88.98510935455656

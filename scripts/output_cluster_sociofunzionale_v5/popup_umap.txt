@@ -1,0 +1,42 @@
+# {profilo_pubblico}
+
+## Popolazione
+
+Residenti: {residenti_label}
+Famiglie: {famiglie_label}
+Abitazioni: {abitazioni_label}
+
+## Morfologia e percorribilità
+
+Profilo di pendenza: {pendenza_label}
+Dislivello interno: {dislivello_label}
+Facilità territoriale: {facilita_territoriale_label}
+
+## Servizi raggiungibili a piedi
+
+Entro 5 minuti: {servizi_5min_label}
+Entro 10 minuti: {servizi_10min_label}
+Entro 15 minuti: {servizi_15min_label}
+
+Cultura e tempo libero: {tempo_cultura_label}
+Associazioni e gruppi: {tempo_associazioni_label}
+Ristorazione: {tempo_ristorazione_label}
+Attività economiche: {tempo_attivita_economiche_label}
+
+## Trasporto pubblico
+
+Fermata più accessibile: {gtfs__fermata_migliore}
+Tempo a piedi: {tempo_fermata_label}
+Linee urbane con fermata nella sezione: {gtfs__linee_urbane_con_fermata_nella_sezione}
+Linee extraurbane con fermata nella sezione: {gtfs__linee_extraurbane_con_fermata_nella_sezione}
+Fermata più accessibile: {gtfs__fermata_migliore}
+Tempo a piedi: {tempo_fermata_label}
+Passaggi nella fascia analizzata: {passaggi_label}
+
+## Sintesi
+
+Accessibilità territoriale: {accessibilita_label}
+Indice socio-funzionale: {indice_sociofunzionale_label}
+
+---
+{nota_metodologica}

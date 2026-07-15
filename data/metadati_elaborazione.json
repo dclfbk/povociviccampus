@@ -1,0 +1,30 @@
+{
+  "chiave_join": "SEZ21_ID",
+  "crs_sezioni_input": "EPSG:32632",
+  "crs_output_metric": "EPSG:25832",
+  "file_input": {
+    "sections": "../data/sezioni_censimento.geojson",
+    "istat": "../data/R04_Trentino-Alto Adige_2023_sezioni.xlsx",
+    "dtm": "../data/dtm_povo.tif",
+    "slope_deg": "../data/pendenza_gradi_povo.tif",
+    "slope_pct": "../data/pendenza_percentuale_povo.tif"
+  },
+  "fallback": {
+    "pop_riferimento": [
+      "P1",
+      "POP21"
+    ],
+    "fam_riferimento": [
+      "PF1",
+      "FAM21"
+    ],
+    "abi_riferimento": [
+      "A1",
+      "ABI21"
+    ],
+    "edi_riferimento": [
+      "E1",
+      "EDI21"
+    ]
+  }
+}

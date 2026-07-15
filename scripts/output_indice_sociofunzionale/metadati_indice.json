@@ -1,0 +1,45 @@
+{
+  "input": {
+    "sections": "../data/sezioni_povo_istat_dtm.gpkg",
+    "services": "output_accessibilita_servizi/accessibilita_servizi_povo.gpkg",
+    "gtfs": "output_accessibilita_gtfs_v3/accessibilita_gtfs_multifeed_povo.gpkg"
+  },
+  "fields_used": {
+    "join_key": "SEZ21_ID",
+    "population": "pop_riferimento",
+    "density": "dens_pop_km2",
+    "slope": null,
+    "relief": "dislivello_m",
+    "service_time_columns": [],
+    "service_5_columns": [],
+    "service_10_columns": [],
+    "service_15_columns": [],
+    "gtfs_time_columns": [
+      "gtfs__tempo_fermata_qualsiasi_min"
+    ],
+    "gtfs_passages": null,
+    "gtfs_frequency": null
+  },
+  "weights": {
+    "indice_accessibilita": {
+      "servizi": 0.4,
+      "trasporto_pubblico": 0.35,
+      "facilita_territoriale": 0.25
+    },
+    "indice_civico_territoriale": {
+      "accessibilita": 0.65,
+      "intensita_residenziale": 0.35
+    }
+  },
+  "cluster_labels": {
+    "1": "area_mista_di_transizione",
+    "2": "area_mista_di_transizione_2",
+    "3": "area_periferica_o_morfologicamente_svantaggiata",
+    "4": "nucleo_residenziale"
+  },
+  "notes": [
+    "Gli score sono percentili 0-100, orientati in modo che valori alti siano migliori.",
+    "Il clustering e' esplorativo e deve essere validato cartograficamente e sul territorio.",
+    "L'indice non misura direttamente i city users finche' non vengono forniti dati di affluenza o attrattori pesati."
+  ]
+}

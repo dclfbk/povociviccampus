@@ -1,0 +1,2 @@
+data_servizio,fascia_oraria,linee_urbane_nella_circoscrizione,linee_extraurbane_nella_circoscrizione,numero_linee_pertinenti,numero_fermate_interne,numero_fermate_esterne_accessibili,numero_sezioni,sezioni_entro_5_min,sezioni_entro_10_min,sezioni_entro_15_min,popolazione_totale,popolazione_entro_5_min,popolazione_entro_10_min,popolazione_entro_15_min
+2026-07-14,07:00:00-20:00:00,"1,13,16,3,5,5/,6,CM","B103,B116,B401,B402,B403,B450,B512",19,31,32,95,38,58,69,8327.0,4836.0,6707.0,6963.0

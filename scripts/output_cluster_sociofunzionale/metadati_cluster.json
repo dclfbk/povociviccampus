@@ -1,0 +1,25 @@
+{
+  "input": "1.json",
+  "numero_sezioni": 95,
+  "numero_cluster": 4,
+  "metodo": "AgglomerativeClustering",
+  "linkage": "ward",
+  "scaling": "RobustScaler",
+  "imputazione": "mediana",
+  "winsorization": "1%-99%",
+  "silhouette": 0.27051119578899974,
+  "variabili": [
+    "pop_riferimento",
+    "fam_riferimento",
+    "abi_riferimento",
+    "dislivello_sezione_m",
+    "srv__servizi_5min",
+    "srv__servizi_15min",
+    "srv__t_associazioni_e_gruppi_min",
+    "srv__t_cultura_e_tempo_libero_min",
+    "srv__t_ristorazione_e_agriturismi_min",
+    "srv__t_servizi_e_attivit_economiche_min",
+    "gtfs__tempo_fermata_qualsiasi_min",
+    "gtfs__passaggi_totali_fermata"
+  ]
+}

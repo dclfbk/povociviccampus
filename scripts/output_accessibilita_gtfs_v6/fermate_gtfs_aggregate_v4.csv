@@ -1,0 +1,64 @@
+stop_cluster_id,stop_name,stop_ids,feed_sources,linee_urbane,linee_extraurbane,passaggi_urbani,passaggi_extraurbani,fermata_interna,fermata_esterna_accessibile,passaggi_totali,tipo_servizio,relazione_confine,graph_node,snap_dist_m
+1,Borino,"2530,9",urbano,"5,CM",,45,0,True,False,45,urbano,fermata_interna,436656077,3.6863242217063723
+2,"Cognola ""Toresela""",17,urbano,9,,28,0,False,True,28,urbano,fermata_esterna_accessibile,245018006,11.89002255827308
+3,"Cognola ""Toresela""",18,urbano,9,,27,0,False,True,27,urbano,fermata_esterna_accessibile,3920435221,38.849159729860126
+4,Cognola Bivio Civezzano,"19,20",urbano,9,,55,0,False,True,55,urbano,fermata_esterna_accessibile,5501458393,35.00851171554735
+5,Cognola Grezoni,"22,23",urbano,9,,55,0,False,True,55,urbano,fermata_esterna_accessibile,2624885411,4.306137769100137
+6,"Cognola Alla Veduta ""Roza""",30,urbano,9,,27,0,False,True,27,urbano,fermata_esterna_accessibile,3920435106,49.15959762413335
+7,"Cognola Alla Veduta ""Roza""",31,urbano,9,,28,0,False,True,28,urbano,fermata_esterna_accessibile,3920435106,3.9046125654925765
+8,"Gabbiolo ""Campo Sportivo""","2918,46,47",urbano,"1,13,6",,42,0,True,False,42,urbano,fermata_interna,8977501175,10.493881660544005
+9,Grotta Piazza,69,urbano,6,,54,0,False,True,54,urbano,fermata_esterna_accessibile,312556199,16.99369637956497
+10,Grotta Bindesi,70,urbano,6,,27,0,False,True,27,urbano,fermata_esterna_accessibile,322510604,119.34929756743078
+11,Grotta Bindesi,71,urbano,6,,27,0,False,True,27,urbano,fermata_esterna_accessibile,7040597269,154.82845166966464
+12,"Mesiano ""Fac. Ingegneria""","145,146",urbano,"16,3,5,5/",,112,0,True,False,112,urbano,fermata_interna,928552604,23.716251450021506
+13,"Mesiano ""Stazione Fs""","147,148,4616","extraurbano,urbano","16,3,5,5/",B450,112,6,False,True,118,misto,fermata_esterna_accessibile,3134690112,19.755483862873845
+14,Povo Valoni,149,urbano,"16,5,5/",,59,0,True,False,59,urbano,fermata_interna,9044958459,33.35578402404208
+15,Povo Valoni,150,urbano,"16,3,5",,54,0,True,False,54,urbano,fermata_interna,2799582556,8.348396818403343
+16,Villazzano Valnigra,"159,160",urbano,"1,13,6",,42,0,False,True,42,urbano,fermata_esterna_accessibile,322508553,24.11081654405217
+17,Oltrecastello,161,urbano,5,,54,0,True,False,54,urbano,fermata_interna,274232819,13.659846127735975
+18,Ponte Lodovico,174,urbano,"5,5/,9",,77,0,False,True,77,urbano,fermata_esterna_accessibile,13173229823,11.645187118894386
+19,Ponte Lodovico,175,urbano,"16,3,5",,54,0,True,False,54,urbano,fermata_interna,928539085,34.089698134894924
+20,Spré Pinara,179,urbano,"5,CM",,36,0,True,False,36,urbano,fermata_interna,1999373974,14.474202841708047
+21,Spré Pinara,180,urbano,"5,CM",,36,0,True,False,36,urbano,fermata_interna,1999373944,15.307362875144786
+22,"Povo ""Casa di Riposo""","181,182",urbano,"5,CM",,72,0,True,False,72,urbano,fermata_interna,4215428976,4.303768709605293
+23,"Povo ""Centro Civico""","183,184",urbano,"1,13,3,5",,94,0,True,False,94,urbano,fermata_interna,7661335585,4.689513666786326
+24,Povo S.Agata,185,urbano,"13,16,5,CM",,77,0,True,False,77,urbano,fermata_interna,275607178,16.614511031968576
+25,Povo Piazza Manci,"186,187",urbano,"1,13,16,3,5,CM",,154,0,True,False,154,urbano,fermata_interna,4179376097,9.783835621798119
+26,"Povo ""Fac. Scienze""","188,189",urbano,"3,5",,55,0,True,False,55,urbano,fermata_interna,6838225174,15.475091596685571
+27,"Povo ""Polo Sociale"" Cap.","190,191,2549",urbano,"1,13,16,3,5,CM",,154,0,True,False,154,urbano,fermata_interna,4215428973,4.836851542253262
+28,Povo Salé,"215,216",urbano,"1,13,3,5",,94,0,True,False,94,urbano,fermata_interna,7716169350,11.415589773532002
+29,San Donà,219,urbano,"16,9",,38,0,False,True,38,urbano,fermata_esterna_accessibile,247855911,7.897158213635113
+30,"San Donà ""Chiesa""",220,urbano,"16,9",,37,0,False,True,37,urbano,fermata_esterna_accessibile,1500451417,10.544086709744953
+31,San Donà,222,urbano,"16,9",,37,0,False,True,37,urbano,fermata_esterna_accessibile,910573157,16.848320597905303
+32,Spré S.Lucia,243,urbano,"5,CM",,36,0,True,False,36,urbano,fermata_interna,10249784369,1.6239172057311548
+33,Spré S.Lucia,244,urbano,"5,CM",,36,0,True,False,36,urbano,fermata_interna,274232809,17.834385663702278
+34,Tavernaro Centro,"248,249",urbano,9,,55,0,False,True,55,urbano,fermata_esterna_accessibile,258015151,31.51784371240617
+35,"Tavernaro ""Salet""",250,urbano,9,,27,0,False,True,27,urbano,fermata_esterna_accessibile,979927955,12.060775672829635
+36,"Tavernaro ""Salet""",251,urbano,9,,28,0,False,True,28,urbano,fermata_esterna_accessibile,979927955,29.788466572747737
+37,"Tavernaro ""Villa Clementi""",252,urbano,9,,27,0,False,True,27,urbano,fermata_esterna_accessibile,5501458389,56.806389015702614
+38,"Tavernaro ""Villa Clementi""",253,urbano,9,,28,0,False,True,28,urbano,fermata_esterna_accessibile,258015151,114.96253409382444
+39,"Asiago ""Bellevue""","272,273,3109,6325","extraurbano,urbano","1,6","B303,B450",56,32,False,True,88,misto,fermata_esterna_accessibile,9530471056,22.965816055525636
+40,Villazzano Giordano,"378,379",urbano,6,,55,0,False,True,55,urbano,fermata_esterna_accessibile,11137944280,5.850647601281747
+41,Venezia Cave,451,urbano,"3,5,9",,73,0,False,True,73,urbano,fermata_esterna_accessibile,10275626079,181.87997381924393
+42,Trento. Via Valsugana,"452,578","extraurbano,urbano","5,5/,9","B103,B116,B401,B402,B403",77,35,False,True,112,misto,fermata_esterna_accessibile,928552654,4.727992575895567
+43,Trento. Via Valsugana,"1248,453","extraurbano,urbano","3,5,9","B103,B116,B401,B402,B403,B512",73,38,False,True,111,misto,fermata_esterna_accessibile,928552690,2.5628354374763256
+44,Vicenza Montello,"454,455",urbano,"1,6",,56,0,False,True,56,urbano,fermata_esterna_accessibile,278767635,120.89829934632368
+45,"Villamontagna ""Michei""",478,urbano,9,,27,0,False,True,27,urbano,fermata_esterna_accessibile,258015168,177.43082659436558
+46,"Villamontagna ""Michei""",479,urbano,9,,28,0,False,True,28,urbano,fermata_esterna_accessibile,258015168,211.94252375577483
+47,"Villazzano ""Chiesa""","2499,481",urbano,"1,13,6",,96,0,False,True,96,urbano,fermata_esterna_accessibile,11777833436,105.06965882177333
+48,Villazzano Piazza Nicolini,"484,485",urbano,6,,54,0,False,True,54,urbano,fermata_esterna_accessibile,434208010,112.72763847461061
+49,Povo Pantè,"2490,2820",urbano,"16,5",,42,0,True,False,42,urbano,fermata_interna,7661335606,8.039822014854789
+50,Cimirlo,2524,urbano,CM,,30,0,True,False,30,urbano,fermata_interna,9551617265,12.735472383797855
+51,Eremo,"2525,2535",urbano,CM,,18,0,True,False,18,urbano,fermata_interna,11125253212,14.182419765467408
+52,Celva,2526,urbano,CM,,18,0,True,False,18,urbano,fermata_interna,442163720,5.949598873830319
+53,Via Eremo,"2527,2534",urbano,CM,,18,0,True,False,18,urbano,fermata_interna,274232950,38.0941256611308
+54,Maso di Brenz,2528,urbano,CM,,9,0,True,False,9,urbano,fermata_interna,3161662108,19.410425773352717
+55,Borino Civ.69,"2529,2532",urbano,CM,,18,0,True,False,18,urbano,fermata_interna,274232919,58.250029675729536
+56,Maso di Brenz,2533,urbano,CM,,9,0,True,False,9,urbano,fermata_interna,8622268830,7.08083077859176
+57,Povo Sommarive,2682,urbano,"5,5/",,21,0,True,False,21,urbano,fermata_interna,533341769,27.568715206473332
+58,"Povo ""Polo Scientifico"" Ovest","2683,2833",urbano,"5,5/",,26,0,True,False,26,urbano,fermata_interna,6949776503,16.917866495711888
+59,"Cimirlo ""Cabina Elettrica""",3119,urbano,CM,,13,0,True,False,13,urbano,fermata_interna,274232991,11.11132761712579
+60,"Cimirlo ""Parco""",3120,urbano,CM,,13,0,True,False,13,urbano,fermata_interna,800977539,14.361690774556289
+61,"Cimirlo ""B&B""",3121,urbano,CM,,13,0,True,False,13,urbano,fermata_interna,312554230,12.184851143725297
+62,Gocciadoro,3155,urbano,7,,56,0,False,True,56,urbano,fermata_esterna_accessibile,11078273053,62.58744039608267
+63,Ponte Alto,"579,611",extraurbano,,"B103,B116,B401,B402,B403",0,68,False,True,68,extraurbano,fermata_esterna_accessibile,266156629,3.9446906287513066

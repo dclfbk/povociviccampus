@@ -1,0 +1,113 @@
+source_id,name,category,address,lat,lng,rating,rating_n,current_popularity,time_spent_min,has_populartimes
+ChIJ_WZ7fgB1gkcRCQmIRaRBL5Y,Bivacco Malga Nova,"lodging,point_of_interest,establishment","25MF+6R, Trento",46.03304019999999,11.1746342,,,,,False
+ChIJqVPoBOl1gkcRKQoueHeUWhM,La Marzola,"tourist_attraction,point_of_interest,establishment",Trento,46.0318415,11.1874992,4.6,,,,False
+ChIJn6VnINZ1gkcRceuTJU4y3Bg,Grill park attrezzato pra marquart,"park,point_of_interest,establishment",Trento,46.0457247,11.1724691,4.7,,,,False
+ChIJTxbXrkR3gkcRYEQLG5BVhRY,Doss dei Corvi (1471 m),"tourist_attraction,point_of_interest,establishment","25WQ+42, Trento",46.0452704,11.1875173,3.7,,,,False
+ChIJFWVbiZt2gkcRbtV46kqvs4E,"Gym ""G. Pascoli""","gym,health,point_of_interest","Via Znojmo, 24, Trento",46.0528791,11.1509024,4,,,,False
+ChIJPcafRXx2gkcRcoFhjZz1m8U,La Busa Grande,"gym,health,point_of_interest",Trento,46.0523998,11.1711917,3.8,,,,False
+ChIJ19ZGwJB2gkcR_RulcPTDhUk,Creed Soluzioni Creative,"electronics_store,point_of_interest,store","Via Gabbiolo, 4, Trento",46.0590651,11.1530341,,,,,False
+ChIJAfY37f13gkcR5CwCHiL9PYI,Api e Terre di Giuseppe Barbareschi - Maso Bianca,"point_of_interest,store,food","Via Castel di Pietrapiana, 8, Povo",46.0580518,11.1492454,4.8,,,,False
+ChIJIbgOKpd2gkcRkeC-ZFYu87Y,Studio 33 di Ianes Francesco,"point_of_interest,store,establishment","Via alla Val 8, Località Povo, Via alla Val, 8, Trento",46.0604856,11.151459,5,,,,False
+ChIJATDSLZF2gkcRX_mFzzz2lQU,A&B Le Terrazze del Sale' - Apartment and Breakfast,"lodging,point_of_interest,establishment","Via alla Val, 61, Povo",46.06019380000001,11.152198,4.9,,,,False
+ChIJhxTX2ZB2gkcR-C4OUTD6ZMc,"CaseOspitali - CasaTita, un nido vicino Università di Trento pe 2 - Standard Studio","lodging,point_of_interest,establishment",Italy,46.05950929999999,11.1519699,,,,,False
+ChIJDZJlG5d2gkcRq-uN_kVRD-w,Casa Povo Vicino FBK e Università,"lodging,point_of_interest,establishment",Italy,46.0597839,11.1495142,,,,,False
+ChIJpZptmp93gkcRZZ54G099IeQ,Casa Vacanze Casatita,"lodging,point_of_interest,establishment","Via alla Val, 51, Trento",46.0595633,11.1519476,,,,,False
+ChIJhxTX2ZB2gkcR6QNxkEVTc5o,CaseOspitali - La Casatita monolocale per due,"lodging,point_of_interest,establishment",Italy,46.0596504,11.1524296,,,,,False
+ChIJg6nI6a93gkcRXk6-GscckY0,Sentiero attrezzato G. Bertotti,"park,point_of_interest,establishment","353G+R7, Trento",46.05456530000001,11.1756723,5,,,,False
+ChIJLQaUqpV2gkcRyf-k_OsYt50,Apollo S.R.L.,"restaurant,point_of_interest,food","Via Don Tommaso Dallafior, 36, Trento",46.0639331,11.1489239,,,,,False
+ChIJ8beMAJV2gkcRfMMKHupX0SM,Orostube,"meal_takeaway,restaurant,point_of_interest","Via Sommarive, 10, Povo",46.06485379999999,11.1505162,4.7,,,,False
+ChIJiUvN67h2gkcRqWV9nzWHies,Trattoria Al Parol,"restaurant,point_of_interest,food","Via Mesiano, 40, Trento",46.0668415,11.1406049,4.5,,,,False
+ChIJtR6fkSp3gkcRL-D2aeYktqo,autoincidentate.it Trento - compro auto incidentate,"car_dealer,storage,store","Via Mesiano, Trento",46.06563349999999,11.1418737,,,,,False
+ChIJvw59jKB3gkcRWavvFZgd__Q,8 Grappoli Agritur,"lodging,point_of_interest,establishment","Via Graffiano, 14/E, Trento",46.0621681,11.1485004,4.9,,,,False
+ChIJBzWlcZZ2gkcRLAS0qYD_lMQ,8 Grappoli Agritur - Double Room,"lodging,point_of_interest,establishment",Italy,46.06214139999999,11.14853,,,,,False
+ChIJBzWlcZZ2gkcRywuTrNaJjGQ,8 Grappoli Agritur - Deluxe Double Room with Extra Bed,"lodging,point_of_interest,establishment",Italy,46.06214139999999,11.14853,,,,,False
+ChIJBzWlcZZ2gkcRWD1lSVDru84,8 Grappoli Agritur - Superior Double or Twin Room,"lodging,point_of_interest,establishment",Italy,46.06214139999999,11.14853,,,,,False
+ChIJf3IrsZR2gkcRsdRo4fQifzc,Farmacia Comunale Povo,"pharmacy,point_of_interest,store","Piazza Giannantonio Manci, 5, Povo",46.0663277,11.1540869,4.3,41,,,False
+ChIJm0g0zbl2gkcRsoWWde_WuM0,Coop,"supermarket,grocery_or_supermarket,convenience_store","FRAZ, Piazza Giannantonio Manci, 8, Povo",46.0663851,11.1544449,4.1,,,,False
+ChIJdT0zopZ2gkcR-wrZng39-e0,La Cantina,"restaurant,point_of_interest,food","Via Salè, 8, Trento",46.0620002,11.15155,4.7,,,,False
+ChIJv3DBT5N2gkcR1SzrL3p3azQ,Pizza Rio,"restaurant,point_of_interest,food","Via della Resistenza, 9/A, Trento",46.0663098,11.1550973,4.6,,,,False
+ChIJffu_ett3gkcRZcTuM4ysh_I,Pinetana Polli a POVO,"meal_takeaway,restaurant,point_of_interest","Piazza Giannantonio Manci, Povo",46.0660304,11.1544587,5,,,,False
+ChIJOcCJ2XJ3gkcRXz6mFu5_zPc,La Botte,"restaurant,point_of_interest,food","Piazza Giannantonio Manci, 14, Povo",46.0661943,11.1548508,4.8,,,,False
+ChIJ5ZdJaTV3gkcRKyM_frROL5s,Bar al Salè,"bar,restaurant,point_of_interest","Località, Via Salè, 14, Trento",46.0619866,11.1518192,4.8,,,,False
+ChIJFWpZT5N2gkcR4n8mRPAYITs,Bar Osteria CanTon,"bar,point_of_interest,establishment","Via della Resistenza, 21, Povo",46.0662116,11.1553157,4.4,,,,False
+ChIJHShgHAB3gkcRkEPY04lIm7I,Bar in Centro,"bar,point_of_interest,establishment","Piazza Giannantonio Manci, 9, Trento",46.066173,11.1546472,4.6,,,,False
+ChIJf9otXpN2gkcRHeHC2JYJxe8,Pane...e non solo!,"bakery,food,store","Via Don Tommaso Dallafior, 2, Povo",46.0658135,11.1542037,4.7,,,,False
+ChIJNWhrq5Z2gkcRkGMnSus2kCE,Panificio Pittalis Loredana,"bakery,food,store","Via Salè, 21, Povo",46.06201290000001,11.1524588,5,,,,False
+ChIJWaR7XWV3gkcRVywBcBvZxT4,Palestra Povo - Marzola,"gym,point_of_interest,health","Via Salè, Povo",46.06423460000001,11.1531029,3.8,,,,False
+ChIJW1oMQ5N2gkcRH8jle-7wTdg,BTS - Banca Trentino-Südtirol Filiale Trento 7,"bank,atm,finance","Piazza Giannantonio Manci, 17, Povo",46.0656683,11.154946,4.1,,,,False
+ChIJ5dBjgUpxgkcRNDdPeX8EoGQ,Ufficio Postale Poste Italiane,"post_office,finance,point_of_interest","Piazza Giannantonio Manci, 4, Povo",46.06596099999999,11.1539545,3.1,,,,False
+ChIJc5tviJJ2gkcRjIf7SchVoiM,Studio Medico Dott.Farulo Paolo,"doctor,local_government_office,health","Via Madonna della Corona, 1A, Povo",46.0639692,11.1589147,5,,,,False
+ChIJWQlIMAB3gkcRd435bDjW8VU,ANGELLA FEDERICA,"doctor,health,point_of_interest","Via della Resistenza, 61b, Povo",46.0658347,11.158064,,,,,False
+ChIJBZkWhO12gkcRzoB9cfYP91Y,Colorio Dr. Paolo,"doctor,health,point_of_interest","Via della Resistenza, 61/B, Povo",46.0658347,11.158064,5,,,,False
+ChIJ73lZnZV2gkcRyeY4BEt4hQE,Biblioteca Comunale di Trento - Sede di Povo,"library,city_hall,local_government_office","Via Don Tommaso Dallafior, 5, Povo",46.06494000000001,11.1535274,4.8,,,,False
+ChIJxfsLXpR2gkcR0ERTouVa-aQ,Servizio di Pubblica Lettura. Biblioteca di Povo,"library,point_of_interest,establishment","Via Salè, 1, Povo",46.06489029999999,11.153521,4.5,,,,False
+ChIJYUOhCgB3gkcR4CC3J_o-G3Q,Parco con attrezzature da calisthenics,"park,point_of_interest,establishment","Via dei Rivi, 10, Povo",46.06331679999999,11.1537536,5,,,,False
+ChIJFYfn08t3gkcRu9sQ2W8hTt8,Parco Salè,"park,point_of_interest,establishment","Via Salè, Povo",46.0621319,11.1522753,4.8,,,,False
+ChIJLY4DazZ3gkcRbVsJo0qGKm8,Giardino Salé,"park,point_of_interest,establishment",Povo,46.0616745,11.1520692,3,,,,False
+ChIJoZYsBEV3gkcRPhmm_Q1ipVw,Parco Giochi,"park,point_of_interest,establishment","Via Graffiano, Trento",46.0613568,11.1502151,4,,,,False
+ChIJexqZRZN2gkcRibl9YJZaRdM,AB Cartocopisteria S.a.S.,"point_of_interest,store,establishment","Via della Resistenza, 4, Trento",46.0662118,11.156145,4.3,,,,False
+ChIJRQnZWJN2gkcRUNjQCYUMxUE,Gelateria Dolomeis Povo,"food,point_of_interest,store","Piazza Giannantonio Manci, 3, Povo",46.0660228,11.1543524,4.7,,,,False
+ChIJ4ZuFWZN2gkcRVU2C0eZsd-k,Sapori di Gastronomia,"food,point_of_interest,store","Via della Resistenza, 7, Povo",46.0661932,11.1550043,4.5,,,,False
+ChIJzyqQSJN2gkcRxZMg-9_TMdU,Estetica Mia,"beauty_salon,spa,hair_care","Via della Resistenza, 25, Povo",46.0662342,11.1555408,4.8,,,,False
+ChIJJbwoc_V3gkcRIsdxV58Ph-E,Oscuramento Vetri Trento - AUTODOV,"car_repair,point_of_interest,store","Via Villa Maria, 4, Trento",46.0633331,11.1588987,5,,,,False
+ChIJq4fPVwB3gkcRInfL23xfh2c,PovoSonica,"point_of_interest,store,establishment","Via Don Tommaso Dallafior, 6, Povo",46.0645399,11.1523634,,,,,False
+ChIJuQl8Vex3gkcRuFkD24IhW_E,Tabaccheria Baldessari Ilaria,"point_of_interest,store,establishment","Via della Resistenza, 19, Povo",46.06621579999999,11.1552483,5,,,,False
+ChIJ3Yd6T5N2gkcRT4ZMYGo8G78,Tabaccheria Pegoretti Maria Tiziana,"point_of_interest,store,establishment","Via della Resistenza, 19, Povo",46.06621579999999,11.1552483,4.8,,,,False
+ChIJ_ZiyHx13gkcRBQySL-DXm3M,PrimaEdicola Point,"book_store,point_of_interest,store","Via della Resistenza, 19, Povo",46.0662163,11.1552487,,,,,False
+ChIJ5eJkT5N2gkcRzIjsxq0tDEk,Giornali Tabacchi,"point_of_interest,store,establishment","Via della Resistenza, 19, Povo",46.06622,11.1552545,5,,,,False
+ChIJ50SyEip3gkcRHctfWNKMcAc,InPost Point,"point_of_interest,store,establishment","Via della Resistenza, Trento",46.06622,11.15525,5,,,,False
+ChIJF3vATmh3gkcR6c1qPleo_Vo,Famiglia Cooperativa di Povo dal 1895,"grocery_or_supermarket,food,point_of_interest","Piazza Giannantonio Manci, 8, Povo",46.06623829999999,11.1544596,4.3,,,,False
+ChIJq6qq5pR2gkcRtDwBVd4TdmM,"Facoltà di Scienze, Matematiche, Fisiche e Naturali","university,point_of_interest,establishment","Via Sommarive, 14, Povo",46.0656742,11.1513255,5,,,,False
+ChIJ0fnBv5Z2gkcRg3rGQCqI3NA,House 3 Bedrooms with Garden & Parking close To Trento Oldtown,"lodging,point_of_interest,establishment","Via Castel di Pietrapiana, 1, Povo",46.061355,11.1508322,,,,,False
+ChIJZx0rpJZ2gkcRlFAnUVQEwgY,Camere Ester - CIN IT022205B4PFRFJYHI,"lodging,point_of_interest,establishment","Via Salè, 10, Povo",46.06192349999999,11.1516092,4.6,,,,False
+ChIJz0tb18R3gkcR8qm3-EHwjs4,Marilè,"lodging,point_of_interest,establishment","Via Madonna della Corona, 12, Trento",46.06322199999999,11.1577375,,,,,False
+ChIJgy9UZ4t3gkcRkW_bLLGw2VA,YHouse 33,"lodging,point_of_interest,establishment","Via Salè, 33, Trento",46.0620072,11.1529474,4.9,,,,False
+ChIJ4xCD7fR2gkcRXr5bdJn6aBE,Falegnameria Dimensione Legno,"point_of_interest,store,establishment","Via Brenz Loc, Via Borino, 24, Trento",46.0672842,11.1647678,5,,,,False
+ChIJfWb5b_N2gkcREgC0A1bX-1Y,B&B Al Numero 4,"lodging,point_of_interest,establishment","Via Brenz, 4, Trento",46.0675528,11.166296,5,,,,False
+ChIJZ5KC7fR2gkcRdNPNkSRw7_Q,bed an breakfast Aurora - Twin Room with Shared Bathroom,"lodging,point_of_interest,establishment",Italy,46.06724930000001,11.1687002,,,,,False
+ChIJZ5KC7fR2gkcRf63GrG8RsbQ,bed an breakfast Aurora - Triple Room with Shared Bathroom,"lodging,point_of_interest,establishment",Italy,46.06724930000001,11.1687002,,,,,False
+ChIJ122LUIx3gkcR32H6toAqXDk,Bed an breakfast Aurora,"lodging,point_of_interest,establishment","Via Brenz, 24, Povo",46.06730169999999,11.1686361,4.7,,,,False
+ChIJM0ViMK53gkcRoGNXvoR9UbI,Rocol Chesani,"lodging,point_of_interest,establishment","Strada per Maranza, 9, Cimirlo",46.0663373,11.1847974,,,,,False
+ChIJxcybp1d3gkcRQfZoZqKJ8xA,Ex Roccolo arifugio maranza,"lodging,point_of_interest,establishment","Strada per Maranza, 3, Trento",46.0663723,11.1848157,4.2,,,,False
+ChIJI2QQOpV2gkcRHKKJ7ku5D1g,Bar Università,"restaurant,food,point_of_interest","Via Sommarive, 5, Trento",46.06664250000001,11.1502201,4.3,,,,False
+ChIJJzOt0Op2gkcRsKwfmhlTrLo,Bar FBK,"bar,point_of_interest,establishment","Via Sommarive, 18, Povo",46.06803519999999,11.1513054,4.2,,,,False
+ChIJM62l2K93gkcRo2u92isUTAQ,Parco di Calisthenics,"gym,health,point_of_interest","Polo Scientifico e Tecnologico Fabio Ferrari, Polo A, Via Sommarive, 9, Povo",46.0676863,11.1498104,5,,,,False
+ChIJxa3NIlJxgkcRNA_HFIOQ3CE,BUP - Biblioteca Universitaria Povo - Università di Trento,"library,point_of_interest,establishment","Via Sommarive, 5, Povo",46.067061,11.1502409,4.4,,,,False
+ChIJqeJ6BJV2gkcRSkQzQKC4X1s,Biblioteca dell'Istituto per la Ricerca Scientifica e Tecnologica,"library,point_of_interest,establishment","Via Sommarive, 5, Povo",46.06705849999999,11.1502159,4.8,,,,False
+ChIJQSLeFet2gkcRtEe5_E1nYfU,Denis Orsingher Impianti Termoidraulici,"plumber,general_contractor,home_goods_store","Via Sabbioni, 24, Povo",46.068305,11.1531794,5,,,,False
+ChIJ8SOHlOl2gkcRhSUUr6zJRyc,Cosmesi Furlani,"point_of_interest,store,establishment","Via alla Cascata, 27, Trento",46.0728452,11.1524119,5,,,,False
+ChIJNb9oY-p2gkcRfGL_umv0QK0,CNR-IFN Trento,"university,point_of_interest,establishment","Via alla Cascata, 56/C, Povo",46.0699439,11.150762,5,,,,False
+ChIJmZtoSaZ3gkcRMCn9Pu5AlQQ,Sala conferenze Aula B107,"university,point_of_interest,establishment","Via Sommarive, 9, Povo",46.06816,11.1502176,,,,,False
+ChIJT-8vhT93gkcRrplgERValXY,CIBIO,"university,point_of_interest,establishment","Via alla Cascata, 54B, Povo",46.06813229999999,11.1501118,5,,,,False
+ChIJyeCRPX13gkcR4cAaZqtj3ws,Science and Technology Area| International Mobility Office,"university,point_of_interest,establishment",Trento,46.06708889999999,11.1498247,1,,,,False
+ChIJt8ejZOp2gkcRWPvYxFrFa7Q,Agritur Ponte Alto,"lodging,point_of_interest,establishment","Via alla Cascata, 27, Trento",46.0728862,11.1522541,4.6,,,,False
+ChIJOSs-SOp2gkcRKVfxqwUtgrE,"Via Vittorio Marchesoni, Trento","lodging,point_of_interest,establishment",Italy,46.0706482,11.1522303,,,,,False
+ChIJm1P6Le52gkcR5_uVctKz20M,Oltrebar,"bar,point_of_interest,establishment","Località Oltrecastello 2, Oltrecastello Povo",46.0731229,11.1624042,4.1,,,,False
+ChIJCYoNY_J2gkcRVKbpAfUfYY0,Struffi Dr. Tiziana,"doctor,health,point_of_interest","Via della Resistenza, 61, Povo",46.0692657,11.1609961,,,,,False
+ChIJn6wQhO12gkcR2caBSOm0AVI,Fasani Dr. Loredana,"doctor,health,point_of_interest","Via della Resistenza, 64, Povo",46.06890079999999,11.1613623,,,,,False
+ChIJ8R6TAu52gkcRwlKMpkAccLo,Giardino Oltrecastello,"park,point_of_interest,establishment","Via della Resistenza, Povo",46.0715787,11.1624223,4.3,,,,False
+ChIJ53kKXAB3gkcRkk9m1ZYLGC0,Parcheggio via Santa Lucia,"park,point_of_interest,establishment","Via Sprè, 4-30, Povo",46.068437,11.1609889,,,,,False
+ChIJr_u0GdJ3gkcRERA9qWcCjG0,Area cani,"park,point_of_interest,establishment","Via Vittorio Marchesoni, 30, Trento",46.0723651,11.1562032,,,,,False
+ChIJd8A_ie12gkcRV-qjzOAF1hg,Famiglia Cooperativa Oltrecastello,"store,point_of_interest,establishment","Via della Resistenza, 81, Povo",46.06942389999999,11.1613842,4.2,,,,False
+ChIJ58QXP3l3gkcRS3S6ubriLvY,Xesse,"point_of_interest,store,establishment","Via della Resistenza, Povo",46.0688276,11.1609916,,,,,False
+ChIJYe43PsZ2gkcRdMAIgIp6wdg,Salone Immagine Donna Snc,"hair_care,point_of_interest,establishment","Piazza Oltrecastello, 3, Povo",46.07306690000001,11.1624889,4.1,,,,False
+ChIJq1UBx_J2gkcRoluTZWC3SlQ,A casa di Giordana - One-Bedroom Apartment,"lodging,point_of_interest,establishment",Italy,46.0668602,11.1623602,,,,,False
+ChIJ8aMaP1t2gkcRpzYmzNx5sbo,Parco di Cimirlo,"park,point_of_interest,establishment","Passo del Cimirlo, 49, Cimirlo",46.0699863,11.1852364,4.6,,,,False
+ChIJ0Rg5nlt2gkcRGu019M-TeYE,Ati Progetti,"store,point_of_interest,establishment","Passo del Cimirlo, 64, Cimirlo",46.06980919999999,11.1833041,,,,,False
+ChIJvZhZzlt2gkcRu62rp0vSJfs,B&B White Rose,"lodging,point_of_interest,establishment","Passo del Cimirlo, 81, Trento",46.0710311,11.1816748,4.9,,,,False
+ChIJkY7YhwR3gkcRMnluMSDU2Wg,HOLLIDAY - charming home - TRENTO,"lodging,point_of_interest,establishment","Via alla Cascata, 70, Trento",46.07449809999999,11.1535964,4.8,,,,False
+ChIJXecsTOh2gkcRVojdRZlT9cQ,HOLLIDAY CHARMING HOME - Vacation Home,"lodging,point_of_interest,establishment",Italy,46.0744896,11.15345,4.8,,,,False
+ChIJg-sxo_p2gkcRjTDbqWux63M,Agritur Verderame,"lodging,point_of_interest,establishment","Via della Selva, 49, Povo",46.0774749,11.1696784,4.8,,,,False
+ChIJI6nZQ_p2gkcRR9nM3fVjAAk,Appartamento 6,"lodging,point_of_interest,establishment",Italy,46.0765305,11.1686897,,,,,False
+ChIJK7gdy_t2gkcRrtg0ZY1aHX8,Agritur Verderame: Volpis,"lodging,point_of_interest,establishment",Italy,46.0775414,11.1696901,4.8,,,,False
+ChIJK7gdy_t2gkcRQg2uXMeQC_M,Agritur Verderame: Coel,"lodging,point_of_interest,establishment",Italy,46.0775414,11.1696901,,,,,False
+ChIJK7gdy_t2gkcRCt8brBYImiM,Agritur Verderame: Zelvet,"lodging,point_of_interest,establishment",Italy,46.0775414,11.1696901,,,,,False
+ChIJu18Vy_t2gkcRVOrsGm_W9VA,Agritur Verderame - Quadruple Room,"lodging,point_of_interest,establishment",Italy,46.0775108,11.1697598,,,,,False
+ChIJaxsVy_t2gkcR5RLwywV6tO4,Agritur Verderame - Deluxe Room,"lodging,point_of_interest,establishment",Italy,46.0775184,11.1697597,,,,,False
+ChIJaxsVy_t2gkcRSkg8AqkQde0,Agritur Verderame - Deluxe Double Room (2 Adults + 1 Child),"lodging,point_of_interest,establishment",Italy,46.0775184,11.1697597,,,,,False
+ChIJaxsVy_t2gkcRQX3_wjU5HDg,Agritur Verderame - Queen Room with Balcony,"lodging,point_of_interest,establishment",Italy,46.0775184,11.1697597,,,,,False
+ChIJaxsVy_t2gkcRQ4eKSk5Bbns,Agritur Verderame - Deluxe Double Room with Balcony,"lodging,point_of_interest,establishment",Italy,46.0775184,11.1697597,,,,,False
+ChIJp9YDTuV2gkcRkylatHnnkNw,"Appartamenti moderni, luminosi e tranquilli con parcheggio privato - Agritur La Tenuta - One-Bedroom House","lodging,point_of_interest,establishment",Italy,46.07621,11.1639299,,,,,False
+ChIJuZzmUeV2gkcRDAnuxCGcJAE,"Appartamenti moderni, luminosi e tranquilli con parcheggio privato - Agritur La Tenuta - Two-Bedroom Apartment","lodging,point_of_interest,establishment",Italy,46.07617949999999,11.1638698,,,,,False
+ChIJWx3-dM93gkcRpyJE7LHhXeM,Agritur LA TENUTA,"lodging,point_of_interest,establishment","Via della Selva, 27A, Trento",46.0762356,11.1638263,4.8,,,,False
+ChIJge-UU-V2gkcRZiOzXaicGF4,La Tenuta Verderame - One-Bedroom Apartment,"lodging,point_of_interest,establishment",Italy,46.0759582,11.1639604,,,,,False

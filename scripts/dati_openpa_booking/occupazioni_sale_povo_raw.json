@@ -1,0 +1,18 @@
+{
+  "periodo": {
+    "dal": "2025-01-01",
+    "al_escluso": "2026-07-16"
+  },
+  "sale": {
+    "985812": {
+      "id": 985812,
+      "nome": "Sala Multiuso 2",
+      "dati": []
+    },
+    "985810": {
+      "id": 985810,
+      "nome": "Sala Video Nichelatti",
+      "dati": []
+    }
+  }
+}

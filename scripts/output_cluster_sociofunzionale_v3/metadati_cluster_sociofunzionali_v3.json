@@ -1,0 +1,27 @@
+{
+  "input": "output_indice_sociofunzionale_v2/indice_sociofunzionale_povo_v2.geojson",
+  "numero_sezioni": 95,
+  "numero_cluster": 4,
+  "metodo": "AgglomerativeClustering",
+  "linkage": "ward",
+  "scaling": "RobustScaler",
+  "imputazione": "mediana",
+  "winsorization": "1%-99%",
+  "silhouette": 0.24754214282235573,
+  "variabili_clustering": [
+    "popolazione_rif",
+    "famiglie_rif",
+    "abitazioni_rif",
+    "dislivello_sezione_m",
+    "servizi_5_min",
+    "servizi_15_min",
+    "tempo_associazioni_min",
+    "tempo_cultura_min",
+    "tempo_ristorazione_min",
+    "tempo_attivita_economiche_min",
+    "tempo_fermata_min",
+    "passaggi_totali"
+  ],
+  "campo_categorico_umap": "profilo_pubblico",
+  "campo_tecnico_cluster": "cluster_v3"
+}

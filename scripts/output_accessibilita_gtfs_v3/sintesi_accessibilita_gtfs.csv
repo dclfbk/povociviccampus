@@ -1,0 +1,2 @@
+data_servizio,fascia_oraria,linee_urbane,numero_fermate_originali,numero_fermate_aggregate,numero_fermate_urbane,numero_fermate_extraurbane,numero_fermate_miste,numero_sezioni,sezioni_entro_5_min,sezioni_entro_10_min,sezioni_entro_15_min,popolazione_totale,popolazione_entro_5_min,popolazione_entro_10_min,popolazione_entro_15_min
+2026-07-14,07:00:00-20:00:00,"5,13",146,104,102,5,3,95,30,51,61,8327.0,3206.0,6310.0,6598.0

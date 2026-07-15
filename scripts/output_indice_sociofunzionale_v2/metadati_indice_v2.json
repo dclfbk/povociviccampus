@@ -1,0 +1,67 @@
+{
+  "input": {
+    "sections": "../data/sezioni_povo_istat_dtm.gpkg",
+    "services": "output_accessibilita_servizi/accessibilita_servizi_povo.gpkg",
+    "gtfs_v4": "output_accessibilita_gtfs_v4/accessibilita_gtfs_multifeed_povo_v4.gpkg"
+  },
+  "fields_used": {
+    "join_key": {
+      "normalized_name": "SEZ21_ID",
+      "sections": "SEZ21_ID",
+      "services": "SEZ21_ID",
+      "gtfs": "SEZ21_ID"
+    },
+    "residenza_morfologia": {
+      "population": "pop_riferimento",
+      "families": "fam_riferimento",
+      "homes": "abi_riferimento",
+      "area": "area_m2",
+      "density": "dens_pop_km2",
+      "slope": null,
+      "relief": "dislivello_m"
+    },
+    "servizi": {
+      "services_5": "srv__servizi_5min",
+      "services_10": "srv__servizi_10min",
+      "services_15": "srv__servizi_15min",
+      "category_times": {
+        "tempo_associazioni_min": "srv__t_associazioni_e_gruppi_min",
+        "tempo_cultura_min": "srv__t_cultura_e_tempo_libero_min",
+        "tempo_ristorazione_min": "srv__t_ristorazione_e_agriturismi_min",
+        "tempo_attivita_economiche_min": "srv__t_servizi_e_attivit_economiche_min"
+      }
+    },
+    "trasporto_pubblico": {
+      "time": "gtfs__tempo_fermata_qualsiasi_min",
+      "passages": "gtfs__passaggi_totali_fermata",
+      "boundary_relation": "gtfs__tipo_relazione_confine",
+      "best_stop_internal": "gtfs__fermata_interna_migliore",
+      "urban_lines_inside": "gtfs__linee_urbane_nella_circoscrizione",
+      "extraurban_lines_inside": "gtfs__linee_extraurbane_nella_circoscrizione"
+    }
+  },
+  "weights": {
+    "indice_accessibilita": {
+      "servizi": 0.4,
+      "trasporto_pubblico": 0.35,
+      "facilita_territoriale": 0.25
+    },
+    "indice_sociofunzionale": {
+      "accessibilita": 0.65,
+      "residenza": 0.35
+    }
+  },
+  "classification": {
+    "molto_bassa": "0-25",
+    "bassa": "25-50",
+    "media": "50-75",
+    "alta": "75-100"
+  },
+  "notes": [
+    "I punteggi sono normalizzati su scala 0-100.",
+    "I tempi pedonali del GTFS derivano dal grafo corretto per pendenza.",
+    "Le linee GTFS sono selezionate dallo script 06 v4 in rapporto al confine.",
+    "Il clustering socio-funzionale viene eseguito separatamente dallo script 08.",
+    "L'indice non misura direttamente intensità d'uso, partecipazione o city users."
+  ]
+}

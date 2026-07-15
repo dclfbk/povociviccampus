@@ -1,0 +1,42 @@
+nome,categoria,utenza,funzione,natura,snap_m,t_FBK_andata,t_FBK_ritorno,t_FBK_piatto,dist_FBK_m,t_UniTn_andata,t_UniTn_ritorno,t_UniTn_piatto,dist_UniTn_m,t_FBK_medio,fascia_FBK,penalita_pendenza_%
+"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza","Patrimonio, memoria e fontane",Entrambi,Media,Pubblico / istituzionale,5.3,4.1,3.2,3.7,280,12.7,11.5,11.3,844,3.6,0-5 min,-3.0
+Farmacia Comunale,Servizi pubblici e di comunità,Entrambi,Media,Pubblico / istituzionale,8.7,4.1,3.2,3.7,280,12.7,11.5,11.3,844,3.6,0-5 min,-3.0
+Ufficio Postale,Servizi pubblici e di comunità,Entrambi,Media,Pubblico / istituzionale,7.7,4.3,3.4,3.9,294,12.8,11.7,11.4,858,3.8,0-5 min,-3.0
+Bar In Centro,Ristorazione e agriturismi,Entrambi,Media,Privato / economico,10.8,4.5,3.5,4.1,305,13.1,11.7,11.6,869,4.0,0-5 min,-2.0
+Mercato Settimanale,Commercio e servizi di prossimità,Entrambi,Alta,Privato / economico,14.6,4.5,3.5,4.1,305,13.1,11.7,11.6,869,4.0,0-5 min,-2.0
+Famigla Cooperativa Povo,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,11.4,4.5,3.5,4.1,305,13.1,11.7,11.6,869,4.0,0-5 min,-2.0
+Gelateria Dolomeis,Ristorazione e agriturismi,Entrambi,Media,Privato / economico,17.1,4.5,3.5,4.1,305,13.1,11.7,11.6,869,4.0,0-5 min,-2.0
+Fontana - Piazza Manci,"Patrimonio, memoria e fontane",Entrambi,Media,Pubblico / istituzionale,11.1,4.6,3.7,4.3,321,13.2,12.0,11.8,885,4.2,0-5 min,-2.0
+Banca per il Trentino Alto Adige - Bank für Trentino Südtirol,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,33.6,5.1,4.1,4.7,353,13.6,12.3,12.2,917,4.6,0-5 min,-2.0
+Pane e non solo,Ristorazione e agriturismi,Entrambi,Media,Privato / economico,7.9,5.3,4.5,5.1,380,13.9,12.7,12.6,944,4.9,0-5 min,-4.0
+Anfiteatro all'aperto,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,54.3,5.3,4.5,5.1,380,13.9,12.7,12.6,944,4.9,0-5 min,-4.0
+Bar Al Canton,Ristorazione e agriturismi,Entrambi,Media,Privato / economico,8.4,5.6,4.3,5.1,383,14.2,12.6,12.6,947,4.9,0-5 min,-4.0
+Monumento “Ai Caduti di tutte le Guerre” di Povo,"Patrimonio, memoria e fontane",Entrambi,Media,Pubblico / istituzionale,15.0,5.6,4.9,5.4,406,14.2,13.1,12.9,971,5.2,5-10 min,-4.0
+Centro Estetico,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,11.3,6.0,4.6,5.5,409,14.6,12.8,13.0,973,5.3,5-10 min,-4.0
+Pizzeria Orostube,Ristorazione e agriturismi,Entrambi,Media,Privato / economico,10.6,5.7,5.6,5.7,431,10.5,10.1,9.9,740,5.6,5-10 min,-2.0
+Pizza Rio,Ristorazione e agriturismi,Entrambi,Bassa,Privato / economico,10.0,5.7,5.6,5.7,431,10.5,10.1,9.9,740,5.6,5-10 min,-2.0
+sala video Sergio Nichelatti,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,17.7,5.8,5.5,5.8,431,13.1,12.0,12.3,923,5.6,5-10 min,-3.0
+Scuola Primaria Provinciale,Servizi pubblici e di comunità,Prevalentemente citizens,Bassa,Pubblico / istituzionale,106.5,5.8,5.5,5.8,431,13.1,12.0,12.3,923,5.6,5-10 min,-3.0
+AB Cartocopisteria,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,5.6,6.4,4.9,5.8,435,15.0,13.1,13.3,999,5.6,5-10 min,-3.0
+Sala Multiuso 2 presso Centro civico,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,9.9,6.2,5.8,6.1,458,13.5,12.3,12.7,949,6.0,5-10 min,-2.0
+Biblioteca Comunale,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,9.9,6.2,5.8,6.1,458,13.5,12.3,12.7,949,6.0,5-10 min,-2.0
+Bookcrossing,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,16.3,6.2,5.8,6.1,458,13.5,12.3,12.7,949,6.0,5-10 min,-2.0
+Mercatino del Riuso,Servizi pubblici e di comunità,Entrambi,Alta,Comunità / associazioni,16.3,6.2,5.8,6.1,458,13.5,12.3,12.7,949,6.0,5-10 min,-2.0
+Casa Sociale,"Cultura, socialità e spazi comuni",Entrambi,Alta,Misto / convenzionato,32.0,6.3,6.2,6.5,484,13.3,12.4,12.8,956,6.2,5-10 min,-5.0
+Cabina Fototessere,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,21.1,6.6,6.6,6.8,510,13.0,12.2,12.4,930,6.6,5-10 min,-3.0
+"Scuola Equiparata dell'Infanzia ""Angelina Lorenzini""",Servizi pubblici e di comunità,Prevalentemente citizens,Bassa,Misto / convenzionato,9.0,6.8,6.9,7.0,525,12.3,11.6,11.7,877,6.8,5-10 min,-3.0
+Officina Meccanina Elettrauto Gommista,Commercio e servizi di prossimità,Entrambi,Bassa,Privato / economico,17.3,7.4,7.3,7.7,574,12.2,11.8,11.8,883,7.4,5-10 min,-4.0
+Casa Melograno,Servizi pubblici e di comunità,Prevalentemente citizens,Media,Misto / convenzionato,8.9,9.4,6.9,8.4,631,17.9,15.2,15.9,1195,8.2,5-10 min,-2.0
+Centro Servizi,Servizi pubblici e di comunità,Prevalentemente citizens,Bassa,Misto / convenzionato,33.6,9.4,6.9,8.4,631,17.9,15.2,15.9,1195,8.2,5-10 min,-2.0
+Punto Prelievi,Servizi pubblici e di comunità,Entrambi,Media,Misto / convenzionato,12.3,9.4,6.9,8.4,631,17.9,15.2,15.9,1195,8.2,5-10 min,-2.0
+Agritur 8 Grappoli,Ristorazione e agriturismi,Prevalentemente city users / visitatori,Bassa,Privato / economico,131.9,8.7,9.3,9.5,713,13.5,13.8,13.6,1021,9.0,5-10 min,-5.0
+Bookcrossing,"Cultura, socialità e spazi comuni",Entrambi,Alta,Pubblico / istituzionale,21.5,8.8,9.7,9.7,730,14.6,14.6,14.6,1098,9.2,5-10 min,-5.0
+Famiglia Cooperativa Povo,Commercio e servizi di prossimità,Entrambi,Media,Privato / economico,6.1,17.7,12.9,14.4,1083,26.3,21.2,22.0,1647,15.3,15-20 min,6.0
+"Scuola Provinciale dell'Infanzia ""M.C. CONOTTER""",Servizi pubblici e di comunità,Prevalentemente citizens,Bassa,Pubblico / istituzionale,21.4,17.8,12.9,15.6,1172,26.3,21.2,23.2,1736,15.4,15-20 min,-1.0
+Bookcrossing,"Cultura, socialità e spazi comuni",Entrambi,Alta,Comunità / associazioni,5.6,22.1,17.3,19.4,1451,30.7,25.6,26.9,2015,19.7,15-20 min,2.0
+Fontana - via Madonnina,"Patrimonio, memoria e fontane",Entrambi,Media,Pubblico / istituzionale,6.5,20.2,19.5,20.5,1540,25.9,24.4,25.4,1908,19.8,15-20 min,-3.0
+Agritur La Tenuta,Ristorazione e agriturismi,Prevalentemente city users / visitatori,Bassa,Privato / economico,112.8,28.8,23.4,26.4,1981,37.3,31.6,33.9,2545,26.1,>20 min,-1.0
+Agritur Verderame,Ristorazione e agriturismi,Prevalentemente city users / visitatori,Bassa,Privato / economico,50.1,36.1,28.8,32.8,2460,44.7,37.0,40.3,3025,32.4,>20 min,-1.0
+Agritur Ponte Alto,Ristorazione e agriturismi,Prevalentemente city users / visitatori,Bassa,Privato / economico,142.9,33.3,31.9,31.8,2385,41.9,40.2,39.3,2950,32.6,>20 min,3.0
+Vigili del Fuoco,Servizi pubblici e di comunità,Prevalentemente citizens,Bassa,Comunità / associazioni,99.7,34.8,31.3,28.7,2152,43.4,39.6,36.2,2716,33.0,>20 min,15.0
+Forte Sella di Roncogno,"Patrimonio, memoria e fontane",Prevalentemente city users / visitatori,Media,Pubblico / istituzionale,18.0,69.8,51.3,51.8,3884,78.3,59.5,59.3,4448,60.6,>20 min,17.0

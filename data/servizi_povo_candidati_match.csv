@@ -1,0 +1,111 @@
+service_row,service_name,service_address,rank,score,poi_name,poi_address,latitude,longitude,poi_source
+0,Mercatino del Riuso,via Don T. Dallafior 2 (ingresso da Piazzale Merler) o civico 5 (ingresso lato Chiesa),1,73.5,A&B Le Terrazze Del Sale' - Apartment And Breakfast,Via Alla Val n.61,46.060188483996434,11.152226082577041,foursquare_povo.geojson
+1,BOOKCROSSING presso Centro Civico,Via don T.Dallafior 2 - Piazzale C. Merler,1,100.0,Bookcrossing,Via don T.Dallafior 2 - Piazzale C. Merler,46.064879,11.153424,cultura_socialita_e_spazi_comuni.csv
+1,BOOKCROSSING presso Centro Civico,Via don T.Dallafior 2 - Piazzale C. Merler,2,89.33,Bookcrossing,Via Salè,46.0625721,11.1522169,cultura_socialita_e_spazi_comuni.csv
+1,BOOKCROSSING presso Centro Civico,Via don T.Dallafior 2 - Piazzale C. Merler,3,82.72,Sala Multiuso 2 presso Centro civico,Via Don T. Dallafior 5,46.064937,11.153418,cultura_socialita_e_spazi_comuni.csv
+1,BOOKCROSSING presso Centro Civico,Via don T.Dallafior 2 - Piazzale C. Merler,4,82.55,Bookcrossing,Parco di Oltrecastello,46.072216,11.162166,cultura_socialita_e_spazi_comuni.csv
+1,BOOKCROSSING presso Centro Civico,Via don T.Dallafior 2 - Piazzale C. Merler,5,73.2,Centro Estetico,Via della Resistenza 25,46.066208,11.155608,commercio_e_servizi_di_prossimita.csv
+2,BOOKCROSSING al Parco del Salè,Via Salè,1,100.0,Bookcrossing,Via Salè,46.0625721,11.1522169,cultura_socialita_e_spazi_comuni.csv
+2,BOOKCROSSING al Parco del Salè,Via Salè,2,90.14,fermata povo salè,Via Salè,46.06191525081881,11.151267625337757,foursquare_povo.geojson
+2,BOOKCROSSING al Parco del Salè,Via Salè,3,90.14,bar salè,Via Salè,46.06399329572866,11.158128573701859,foursquare_povo.geojson
+2,BOOKCROSSING al Parco del Salè,Via Salè,4,89.33,Bookcrossing,Via don T.Dallafior 2 - Piazzale C. Merler,46.064879,11.153424,cultura_socialita_e_spazi_comuni.csv
+2,BOOKCROSSING al Parco del Salè,Via Salè,5,85.57,A&B Le Terrazze Del Sale' - Apartment And Breakfast,Via Alla Val n.61,46.060188483996434,11.152226082577041,foursquare_povo.geojson
+3,SALA VIDEO SERGIO NICHELATTI,"Povo - Piazzale C. Merler, 1",1,100.0,sala video Sergio Nichelatti,"Povo - Piazzale C. Merler, 1",46.064816,11.153304,cultura_socialita_e_spazi_comuni.csv
+4,Monumento “Ai Caduti di tutte le Guerre” di Povo,via Don T. Dallafior n. 1,1,80.54,Asilo Nido di Oltrecastello,Via Borino 1,46.07052905715088,11.162651797362217,foursquare_povo.geojson
+4,Monumento “Ai Caduti di tutte le Guerre” di Povo,via Don T. Dallafior n. 1,2,78.35,Scuola Materna - Povo di Trento,Via Pantè 1,46.064745,11.151806,foursquare_povo.geojson
+4,Monumento “Ai Caduti di tutte le Guerre” di Povo,via Don T. Dallafior n. 1,3,76.43,sede Povo 2 - Università di Trento,Via Sommarive 9,46.06825642733636,11.14993055746988,foursquare_povo.geojson
+4,Monumento “Ai Caduti di tutte le Guerre” di Povo,via Don T. Dallafior n. 1,4,76.43,Autodelta di Zordan Romeo,Via Sommarive 2,46.063975,11.150372,foursquare_povo.geojson
+4,Monumento “Ai Caduti di tutte le Guerre” di Povo,via Don T. Dallafior n. 1,5,75.59,Copisteria di Ingegneria,Via Mesiano 77,46.067276417961146,11.13972415788726,foursquare_povo.geojson
+5,"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza",Piazza G. Manci n. 6,1,87.85,Cassa Rurale Di Trento,Piazza Manci 17,46.06570760871926,11.154961454648857,foursquare_povo.geojson
+5,"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza",Piazza G. Manci n. 6,2,86.83,Famiglia Cooperativa di Povo dal 1895,"Piazza Manci Giannantonio, 8",46.06632126559786,11.154434708861467,foursquare_povo.geojson
+5,"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza",Piazza G. Manci n. 6,3,74.73,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+5,"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza",Piazza G. Manci n. 6,4,74.73,Copisteria di Ingegneria,Via Mesiano 77,46.067276417961146,11.13972415788726,foursquare_povo.geojson
+5,"Lapide commemorativa di Giannantonio Manci, partigiano italiano, eroe della resistenza",Piazza G. Manci n. 6,5,74.73,ATM Banca Popolare di Sondrio,Via Mesiano 77,46.067276417961146,11.13972415788726,foursquare_povo.geojson
+6,Forte Sella di Roncogno,"Passo del Cimirlo, 87",1,74.84,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+6,Forte Sella di Roncogno,"Passo del Cimirlo, 87",2,74.14,Teatro di Povo,None,46.07702,11.15657,foursquare_povo.geojson
+6,Forte Sella di Roncogno,"Passo del Cimirlo, 87",3,73.07,AB Cartocopisteria SNC di Ivan Andreolli e Ermann Bisesti,Via della Resistenza 4,46.06623848182548,11.156135008597436,foursquare_povo.geojson
+7,BIBLIOTECA COMUNALE DI TRENTO – SEDE DI POVO,"Via don Tommaso Dallafior, 5",1,100.0,Biblioteca Comunale,"Via don Tommaso Dallafior, 5",46.064937,11.153418,cultura_socialita_e_spazi_comuni.csv
+7,BIBLIOTECA COMUNALE DI TRENTO – SEDE DI POVO,"Via don Tommaso Dallafior, 5",2,84.0,Biblioteca Comunale di Povo,None,46.07133483886719,11.150595664978027,foursquare_povo.geojson
+7,BIBLIOTECA COMUNALE DI TRENTO – SEDE DI POVO,"Via don Tommaso Dallafior, 5",3,78.35,Scuola Materna - Povo di Trento,Via Pantè 1,46.064745,11.151806,foursquare_povo.geojson
+7,BIBLIOTECA COMUNALE DI TRENTO – SEDE DI POVO,"Via don Tommaso Dallafior, 5",4,76.43,sede Povo 2 - Università di Trento,Via Sommarive 9,46.06825642733636,11.14993055746988,foursquare_povo.geojson
+7,BIBLIOTECA COMUNALE DI TRENTO – SEDE DI POVO,"Via don Tommaso Dallafior, 5",5,76.43,Dipartimento di Ingegneria e Scienza dell'Informazione,Via Sommarive 9,46.066919004416974,11.150289004967364,foursquare_povo.geojson
+8,ANFITEATRO ALL'APERTO / ARENA,"Piazza Manci, Povo (nel parco adiacente la Banca per il Trentino Alto Adige - filiale di Povo))",1,100.0,Anfiteatro all'aperto,"Piazza Manci, Povo (nel parco adiacente la Banca per il Trentino Alto Adige - filiale di Povo))",46.065413,11.154953,cultura_socialita_e_spazi_comuni.csv
+9,CASA SOCIALE ,"Povo, Via Salè 1",1,100.0,Casa Sociale,Via Salè 1,46.064387,11.152653,cultura_socialita_e_spazi_comuni.csv
+9,CASA SOCIALE ,"Povo, Via Salè 1",2,78.14,Casa di Riposo Margherita Grazioli,"Via della Resistenza, S/N",46.065951943293754,11.157336881383971,foursquare_povo.geojson
+9,CASA SOCIALE ,"Povo, Via Salè 1",3,76.43,Kaleidoscopio Cooperativa Sociale a R.L.,Via Don Tommaso Dallafior 2 A,46.06568356742343,11.15397629042798,foursquare_povo.geojson
+9,CASA SOCIALE ,"Povo, Via Salè 1",4,72.8,bar salè,Via Salè,46.06399329572866,11.158128573701859,foursquare_povo.geojson
+10,BANCA PER IL TRENTINO ALTO ADIGE - BANK FUER TRENTINO SUEDTIROL,"Piazza G. Manci, 17 - Povo (Trento)",1,98.87,Banca per il Trentino Alto Adige - Bank für Trentino Südtirol,Piazza Manci 17,46.065662,11.154894,commercio_e_servizi_di_prossimita.csv
+10,BANCA PER IL TRENTINO ALTO ADIGE - BANK FUER TRENTINO SUEDTIROL,"Piazza G. Manci, 17 - Povo (Trento)",2,76.81,ATM Banca Popolare di Sondrio,Via Mesiano 77,46.067276417961146,11.13972415788726,foursquare_povo.geojson
+10,BANCA PER IL TRENTINO ALTO ADIGE - BANK FUER TRENTINO SUEDTIROL,"Piazza G. Manci, 17 - Povo (Trento)",3,73.07,Agritur Ponte Alto,Via alla Cascata 27,46.072605740515804,11.152167514564578,foursquare_povo.geojson
+11,Sala Multiuso 2 presso Centro civico,via Don T. Dallafior 5,1,100.0,Sala Multiuso 2 presso Centro civico,Via Don T. Dallafior 5,46.064937,11.153418,cultura_socialita_e_spazi_comuni.csv
+11,Sala Multiuso 2 presso Centro civico,via Don T. Dallafior 5,2,79.47,Mercantil G. B. Santos 2,Cidade Do Povo,46.06542,11.153449,foursquare_povo.geojson
+11,Sala Multiuso 2 presso Centro civico,via Don T. Dallafior 5,3,76.43,sede Povo 2 - Università di Trento,Via Sommarive 9,46.06825642733636,11.14993055746988,foursquare_povo.geojson
+11,Sala Multiuso 2 presso Centro civico,via Don T. Dallafior 5,4,74.78,Centro Estetico,Via della Resistenza 25,46.066208,11.155608,commercio_e_servizi_di_prossimita.csv
+11,Sala Multiuso 2 presso Centro civico,via Don T. Dallafior 5,5,74.14,Sala riunioni biblioteca,None,46.067084,11.150249,foursquare_povo.geojson
+12,Bar In Centro,P.zza Manci n. 9 ,1,74.73,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+12,Bar In Centro,P.zza Manci n. 9 ,2,74.14,bar renè,Via Salè,46.070541595471816,11.15146832357654,foursquare_povo.geojson
+12,Bar In Centro,P.zza Manci n. 9 ,3,74.14,bar salè,Via Salè,46.06399329572866,11.158128573701859,foursquare_povo.geojson
+12,Bar In Centro,P.zza Manci n. 9 ,4,73.5,Bar e mensa Polo Scientifico e Tecnologico Fabio Ferrari,Via Sommarive,46.066773434293026,11.15008605341814,foursquare_povo.geojson
+13,Bar Al Canton,P.zza Manci n. 21,1,74.73,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+13,Bar Al Canton,P.zza Manci n. 21,2,74.14,bar renè,Via Salè,46.070541595471816,11.15146832357654,foursquare_povo.geojson
+13,Bar Al Canton,P.zza Manci n. 21,3,74.14,bar salè,Via Salè,46.06399329572866,11.158128573701859,foursquare_povo.geojson
+13,Bar Al Canton,P.zza Manci n. 21,4,73.5,Bar e mensa Polo Scientifico e Tecnologico Fabio Ferrari,Via Sommarive,46.066773434293026,11.15008605341814,foursquare_povo.geojson
+13,Bar Al Canton,P.zza Manci n. 21,5,72.69,Caffè Osteria Canton,Via della Resistenza 21,46.066236815160984,11.155429882095595,foursquare_povo.geojson
+14,OFFICINA MECCANICA ELETTRAUTO GOMMISTA,"VIA SOMMARIVE, 2",1,98.21,Officina Meccanina Elettrauto Gommista,Via Sommarive 2,46.063956,11.150402,commercio_e_servizi_di_prossimita.csv
+14,OFFICINA MECCANICA ELETTRAUTO GOMMISTA,"VIA SOMMARIVE, 2",2,90.14,Laboratorio di Meccanica,Sommarive,46.068050050378574,11.149449348449707,foursquare_povo.geojson
+15,Pane e non solo,"Via Don Dallafior, 2",1,84.0,Pane… E Non Solo,None,46.065756452401104,11.154204662177454,foursquare_povo.geojson
+15,Pane e non solo,"Via Don Dallafior, 2",2,78.0,AB Cartocopisteria SNC di Ivan Andreolli e Ermann Bisesti,Via della Resistenza 4,46.06623848182548,11.156135008597436,foursquare_povo.geojson
+15,Pane e non solo,"Via Don Dallafior, 2",3,78.0,AB Cartocopisteria SNC Cartoleria e Copisteria,Via della Resistenza 4,46.066187964360154,11.156186682751121,foursquare_povo.geojson
+15,Pane e non solo,"Via Don Dallafior, 2",4,74.98,Bar e mensa Polo Scientifico e Tecnologico Fabio Ferrari,Via Sommarive,46.066773434293026,11.15008605341814,foursquare_povo.geojson
+15,Pane e non solo,"Via Don Dallafior, 2",5,74.84,Dipartimento di Ingegneria e Scienza dell'Informazione,Via Sommarive 9,46.066919004416974,11.150289004967364,foursquare_povo.geojson
+16,Gelateria Dolomeis,Piazza G: Manci,1,76.62,Gelateria Peterle,Piazza Giannantonio Manci,46.06619208310082,11.154869782406873,foursquare_povo.geojson
+17,CENTRO ESTETICO,"VIA DELLA RESISTENZA, 25",1,100.0,Centro Estetico,Via della Resistenza 25,46.066208,11.155608,commercio_e_servizi_di_prossimita.csv
+17,CENTRO ESTETICO,"VIA DELLA RESISTENZA, 25",2,74.78,Sala Multiuso 2 presso Centro civico,Via Don T. Dallafior 5,46.064937,11.153418,cultura_socialita_e_spazi_comuni.csv
+18,Pizzeria Orostube,"Via Sommarive, 10",1,100.0,Orostube,"Via Sommarive, 10",46.06474924527674,11.150489113549739,foursquare_povo.geojson
+19,Pizza Rio,Via della Resistenza 9/A,1,100.0,Pizza Rio,"Via della Resistenza, 9",46.06630802763667,11.154953132785442,foursquare_povo.geojson
+21,AGRITUR 8 GRAPPOLI,"Via Graffiano, 14/E – TN",1,100.0,8 Grappoli Agritur,Via Graffiano 14\u002FE E,46.06205425840148,11.148904052792833,foursquare_povo.geojson
+22,AGRITUR LA TENUTA ,"via VIA della Selva, 27A - 38123 - Trento (TN) - ITALIA",1,76.43,La Cassa Rurale Comano Terme,Via Marconi 4,46.063032598284465,11.15567816158737,foursquare_povo.geojson
+23,AGRITUR PONTE ALTO, Località Ponte Alto Via alla Cascata 27 – Loc.Povo,1,100.0,Agritur Ponte Alto,Via alla Cascata 27,46.072605740515804,11.152167514564578,foursquare_povo.geojson
+23,AGRITUR PONTE ALTO, Località Ponte Alto Via alla Cascata 27 – Loc.Povo,2,73.07,Banca per il Trentino Alto Adige - Bank für Trentino Südtirol,Piazza Manci 17,46.065662,11.154894,commercio_e_servizi_di_prossimita.csv
+24,VIGILI DEL FUOCO,"Via Sabbioni 22/1, Trento, Italy",1,100.0,Vigili Del Fuoco Volontari Povo,Via Sabbioni 1,46.06789470125595,11.152926111628863,foursquare_povo.geojson
+24,VIGILI DEL FUOCO,"Via Sabbioni 22/1, Trento, Italy",2,74.14,A&B Le Terrazze Del Sale' - Apartment And Breakfast,Via Alla Val n.61,46.060188483996434,11.152226082577041,foursquare_povo.geojson
+25,SCUOLA PRIMARIA PROVINCIALE,"VIA DEI RIVI, 6",1,78.35,Scuola Materna - Povo di Trento,Via Pantè 1,46.064745,11.151806,foursquare_povo.geojson
+25,SCUOLA PRIMARIA PROVINCIALE,"VIA DEI RIVI, 6",2,73.38,Istituto Comprensivo Scuola Elementare Media Trento 1,Via Znojmo 24,46.053254407148245,11.1509378457265,foursquare_povo.geojson
+25,SCUOLA PRIMARIA PROVINCIALE,"VIA DEI RIVI, 6",3,72.36,Istituto Comprensivo Scuola Elementare Media Trento 1,Via Gabbiolo 47,46.05553051313047,11.152749491629937,foursquare_povo.geojson
+26,CABINA PER FOTOTESSERE,"VIA CANCELLIERA, 59 -  00072 ARICCIA RM",1,100.0,Cabina Fototessere,-,46.064386,11.152402,commercio_e_servizi_di_prossimita.csv
+26,CABINA PER FOTOTESSERE,"VIA CANCELLIERA, 59 -  00072 ARICCIA RM",2,75.21,Banca per il Trentino Alto Adige - Bank für Trentino Südtirol,Piazza Manci 17,46.065662,11.154894,commercio_e_servizi_di_prossimita.csv
+26,CABINA PER FOTOTESSERE,"VIA CANCELLIERA, 59 -  00072 ARICCIA RM",3,74.14,Scuola per l'infanzia M. Chiara Conotter,None,46.07702,11.15657,foursquare_povo.geojson
+27,MERCATO SETTIMANALE DI PIAZZA MANCI,Piazza Manci - Povo,1,100.0,Mercato Settimanale,Piazza Manci - Povo,46.066002,11.154465,commercio_e_servizi_di_prossimita.csv
+27,MERCATO SETTIMANALE DI PIAZZA MANCI,Piazza Manci - Povo,2,90.14,Compagnia di S.Orsola delle Figlie di S.Angela Merici della Diocesi di,Piazza Giannantonio Manci 15,46.065765581246055,11.155003129633155,foursquare_povo.geojson
+27,MERCATO SETTIMANALE DI PIAZZA MANCI,Piazza Manci - Povo,3,90.14,Cassa Rurale Di Trento,Piazza Manci 17,46.06570760871926,11.154961454648857,foursquare_povo.geojson
+27,MERCATO SETTIMANALE DI PIAZZA MANCI,Piazza Manci - Povo,4,90.14,Cassa di Trento Lavis Mezzocorona Valle di Cembra e Alta Vallagarina,Piazza Giannantonio Manci 17,46.06570760871926,11.154961454648857,foursquare_povo.geojson
+27,MERCATO SETTIMANALE DI PIAZZA MANCI,Piazza Manci - Povo,5,77.14,Piazza Manci,None,46.06602499605463,11.154492069816758,foursquare_povo.geojson
+28,SCUOLA EQUIPARATA DELL'INFANZIA,"VIA PANTE', 1",1,100.0,Scuola equiparata dell'infanzia di Povo,Via Pantè 1,46.064807,11.153469,foursquare_povo.geojson
+28,SCUOLA EQUIPARATA DELL'INFANZIA,"VIA PANTE', 1",2,90.14,Scuola Materna - Povo di Trento,Via Pantè 1,46.064745,11.151806,foursquare_povo.geojson
+28,SCUOLA EQUIPARATA DELL'INFANZIA,"VIA PANTE', 1",3,76.96,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+28,SCUOLA EQUIPARATA DELL'INFANZIA,"VIA PANTE', 1",4,76.96,Tschurtschenthaler Dell'Elmo Carlo - Ris. Dell'Elmo Saracini,Via Dallafior Don Tommaso 32,46.064337662954294,11.150809169979693,foursquare_povo.geojson
+28,SCUOLA EQUIPARATA DELL'INFANZIA,"VIA PANTE', 1",5,75.37,Dipartimento di Ingegneria e Scienza dell'Informazione,Via Sommarive 9,46.066919004416974,11.150289004967364,foursquare_povo.geojson
+29,SCUOLA PROVINCIALE DELL'INFANZIA,"VIA DELLA RESISTENZA, 48",1,76.96,Scuola Materna - Povo di Trento,Via Pantè 1,46.064745,11.151806,foursquare_povo.geojson
+29,SCUOLA PROVINCIALE DELL'INFANZIA,"VIA DELLA RESISTENZA, 48",2,76.81,Bar di Ingegneria dell'Università degli Studi di Trento,Via Mesiano 77,46.06636727452834,11.140654413991328,foursquare_povo.geojson
+29,SCUOLA PROVINCIALE DELL'INFANZIA,"VIA DELLA RESISTENZA, 48",3,75.44,Tschurtschenthaler Dell'Elmo Carlo - Ris. Dell'Elmo Saracini,Via Dallafior Don Tommaso 32,46.064337662954294,11.150809169979693,foursquare_povo.geojson
+29,SCUOLA PROVINCIALE DELL'INFANZIA,"VIA DELLA RESISTENZA, 48",4,74.73,Dipartimento di Ingegneria e Scienza dell'Informazione,Via Sommarive 9,46.066919004416974,11.150289004967364,foursquare_povo.geojson
+30,CENTRO SERVIZI ,VIA DELLA RESISTENZA 61/D,1,77.44,Centro Estetico,Via della Resistenza 25,46.066208,11.155608,commercio_e_servizi_di_prossimita.csv
+30,CENTRO SERVIZI ,VIA DELLA RESISTENZA 61/D,2,73.38,Sala Multiuso 2 presso Centro civico,Via Don T. Dallafior 5,46.064937,11.153418,cultura_socialita_e_spazi_comuni.csv
+31,CASA MELOGRANO,VIA DELLA RESISTENZA N. 61/D,1,88.75,Casa di Riposo Margherita Grazioli,"Via della Resistenza, S/N",46.065951943293754,11.157336881383971,foursquare_povo.geojson
+33,FAMIGLIA COOPERATIVA POVO,PIAZZA MANCI -38123 POVO -TN-,1,100.0,Famiglia Cooperativa di Povo dal 1895,"Piazza Manci Giannantonio, 8",46.06632126559786,11.154434708861467,foursquare_povo.geojson
+33,FAMIGLIA COOPERATIVA POVO,PIAZZA MANCI -38123 POVO -TN-,2,100.0,Famiglia Cooperativa,"Piazza Giannantonio Manci, 8",46.06627074915549,11.154486383744883,foursquare_povo.geojson
+33,FAMIGLIA COOPERATIVA POVO,PIAZZA MANCI -38123 POVO -TN-,3,98.26,Famigla Cooperativa Povo,Piazza Manci,46.066217,11.154406,commercio_e_servizi_di_prossimita.csv
+33,FAMIGLIA COOPERATIVA POVO,PIAZZA MANCI -38123 POVO -TN-,4,81.47,Famiglia Cooperativa Povo,"Via della Resistenza n. 79, 38123 Povo TN",46.069323,11.161291,commercio_e_servizi_di_prossimita.csv
+33,FAMIGLIA COOPERATIVA POVO,PIAZZA MANCI -38123 POVO -TN-,5,79.13,Famiglia Cooperativa,"Via Sprè, 81",46.069375498930974,11.161206302080084,foursquare_povo.geojson
+34,FAMIGLIA COOPERATIVA POVO -FILIALE DI SPRE',"Via della Resistenza n. 79, 38123 Povo TN",1,100.0,Famiglia Cooperativa Povo,"Via della Resistenza n. 79, 38123 Povo TN",46.069323,11.161291,commercio_e_servizi_di_prossimita.csv
+34,FAMIGLIA COOPERATIVA POVO -FILIALE DI SPRE',"Via della Resistenza n. 79, 38123 Povo TN",2,90.14,Sapori di Gastronomia,Via della Resistenza,46.06623848182548,11.156135008597436,foursquare_povo.geojson
+34,FAMIGLIA COOPERATIVA POVO -FILIALE DI SPRE',"Via della Resistenza n. 79, 38123 Povo TN",3,89.4,AB Cartocopisteria SNC di Ivan Andreolli e Ermann Bisesti,Via della Resistenza 4,46.06623848182548,11.156135008597436,foursquare_povo.geojson
+34,FAMIGLIA COOPERATIVA POVO -FILIALE DI SPRE',"Via della Resistenza n. 79, 38123 Povo TN",4,86.82,Famiglia Cooperativa,"Via Sprè, 81",46.069375498930974,11.161206302080084,foursquare_povo.geojson
+34,FAMIGLIA COOPERATIVA POVO -FILIALE DI SPRE',"Via della Resistenza n. 79, 38123 Povo TN",5,81.13,Famiglia Cooperativa,"Piazza Giannantonio Manci, 8",46.06627074915549,11.154486383744883,foursquare_povo.geojson
+36,FARMACIA COMUNALE,"Povo, Piazza G. Manci, 5",1,100.0,Farmacia Comunale Povo,Piazza Giannantonio Manci 5,46.06634941371948,11.15410298500785,foursquare_povo.geojson
+37,AB CARTOCOPISTERIA S.A.S.,"Povo Via della Resistenza,  4 ",1,100.0,AB Cartocopisteria,Via della Resistenza 48,46.066273,11.156069,commercio_e_servizi_di_prossimita.csv
+37,AB CARTOCOPISTERIA S.A.S.,"Povo Via della Resistenza,  4 ",2,93.2,AB Cartocopisteria SNC di Ivan Andreolli e Ermann Bisesti,Via della Resistenza 4,46.06623848182548,11.156135008597436,foursquare_povo.geojson
+37,AB CARTOCOPISTERIA S.A.S.,"Povo Via della Resistenza,  4 ",3,93.2,AB Cartocopisteria SNC Cartoleria e Copisteria,Via della Resistenza 4,46.066187964360154,11.156186682751121,foursquare_povo.geojson
+37,AB CARTOCOPISTERIA S.A.S.,"Povo Via della Resistenza,  4 ",4,77.1,A&B Le Terrazze Del Sale' - Apartment And Breakfast,Via Alla Val n.61,46.060188483996434,11.152226082577041,foursquare_povo.geojson
+37,AB CARTOCOPISTERIA S.A.S.,"Povo Via della Resistenza,  4 ",5,73.35,Caffè Osteria Canton,Via della Resistenza 21,46.066236815160984,11.155429882095595,foursquare_povo.geojson
+39,Fontana in Piazza Manci,Povo - Piazza G.Manci,1,77.14,Piazza Manci,None,46.06602499605463,11.154492069816758,foursquare_povo.geojson

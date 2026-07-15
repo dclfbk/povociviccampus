@@ -1,0 +1,20 @@
+route_id,route_short_name,route_long_name,interseca_confine,ha_fermata_interna,ha_fermata_esterna_accessibile,pertinente,relazione_confine,feed_source
+396,3,Cortesano Gardolo P.Dante Villazzano 3,True,True,True,True,attraversa_con_fermata_interna,urbano
+400,5,Piazza Dante P.Fiera Povo Oltrecastello,True,True,True,True,attraversa_con_fermata_interna,urbano
+402,7,Canova Melta Piazza Dante Gocciadoro,False,False,True,True,solo_fermata_esterna_accessibile,urbano
+406,9,P.Dante S.Donà Cognola Villamontagna,False,False,True,True,solo_fermata_esterna_accessibile,urbano
+408,10,P.Dante Martignano Cognola / Montevaccino,False,False,True,True,solo_fermata_esterna_accessibile,urbano
+466,13,P.Dante Rosmini S.Rocco Povo Polo Soc.,True,True,True,True,attraversa_con_fermata_interna,urbano
+484,16,Centochiavi Martignano Cognola Povo,True,True,True,True,attraversa_con_fermata_interna,urbano
+535,5/,P.Dante P.Fiera Università Mesiano Povo,True,True,True,True,attraversa_con_fermata_interna,urbano
+536,1,Ospedale P.Dante Sopramonte,True,True,True,True,attraversa_con_fermata_interna,urbano
+541,6,Vela P.Dante Villazzano Grotta,True,True,True,True,attraversa_con_fermata_interna,urbano
+570,CM,Povo Borino Celva Passo Cimirlo,True,True,False,True,attraversa_con_fermata_interna,urbano
+69,B402,Trento - Nogarè - Baselga di Pinè -Montesover,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+108,B512,Trento-Borgo Valsugana-Arten-Feltre,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+120,B103,Trento - Civezzano - Sover - Cavalese,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+151,B116,Trento - Civezzano - S.Agnese - Bosco,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+186,B303,Trento-V.Vattaro-Centa-Carbonare-Lavarone-Luserna,False,False,True,True,solo_fermata_esterna_accessibile,extraurbano
+494,B403,Trento - Pergine - Baselga di Pinè - Montesover,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+520,B401,Trento-Pergine V.-Levico T.-Borgo V.,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
+717,B450,Servizio sostitutivo treno-Andata,True,False,True,True,attraversa_senza_fermata_interna,extraurbano
