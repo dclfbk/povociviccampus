@@ -3,8 +3,34 @@ import maplibregl from 'maplibre-gl';
 import bbox from '@turf/bbox';
 import { indicators, number, quantileBreaks } from '../lib/data';
 
-const CLUSTER_COLORS = ['#1a0dab','#6b5bd2','#2b7a78','#d28537','#8d4b7b','#566573'];
+const INITIAL_CENTER = [11.1505, 46.0670];
+const INITIAL_ZOOM = 13.7;
+const CIVIC_COLORS = {
+  'Presidio civico ad alta intensità': '#1a0dab',
+  'Servizio civico-relazionale': '#6656d8',
+  'Servizio di utilità territoriale': '#2b7a78',
+  'Servizio prevalentemente funzionale/attrattivo': '#d28537',
+};
+const CATEGORY_ICONS = {
+  'Servizi pubblici e di comunità': 'building',
+  'Cultura, socialità e spazi comuni': 'people',
+  'Patrimonio, memoria e fontane': 'landmark',
+  'Commercio e servizi di prossimità': 'shop',
+  'Ristorazione e agriturismi': 'food',
+};
+const ICON_SVG = {
+  building: '<path d="M5 21h14M7 21V9h10v12M9 12h2v2H9zm4 0h2v2h-2zM9 16h2v2H9zm4 0h2v2h-2zM6 9l6-5 6 5"/>',
+  people: '<circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3.5 20c.4-4 2.4-6 5.5-6s5.1 2 5.5 6M14 15c3.5-.3 5.5 1.5 6 5"/>',
+  landmark: '<path d="M3 9h18M5 9v9M9 9v9M15 9v9M19 9v9M3 18h18M2 21h20M12 3l9 4H3z"/>',
+  shop: '<path d="M4 10v10h16V10M3 10l2-6h14l2 6M8 20v-6h5v6"/><path d="M3 10c1 2 3 2 4 0 1 2 3 2 4 0 1 2 3 2 4 0 1 2 3 2 4 0"/>',
+  food: '<path d="M7 3v8M4 3v5c0 2 1 3 3 3s3-1 3-3V3M7 11v10M16 3c3 3 3 8 0 10v8M16 3v10"/>',
+};
 const RAMP = ['#f0efff','#c9c4f5','#9388e2','#5f4bc7','#1a0dab'];
+
+function markerHtml(category, color) {
+  const icon = ICON_SVG[CATEGORY_ICONS[category]] || ICON_SVG.landmark;
+  return `<div class="poi-pin" style="--pin:${color}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${icon}</svg></div>`;
+}
 
 function continuousExpression(breaks, inverse=false) {
   const colors = inverse ? [...RAMP].reverse() : RAMP;
@@ -13,29 +39,58 @@ function continuousExpression(breaks, inverse=false) {
   return ['interpolate',['linear'],['to-number',['get','__value'],0], ...stops];
 }
 
-export default function MapView({ sections, services, boundary, campus, isochrones, mode, indicator, selectedProfiles, selectedSectionIds, onSelectSection, origin, minutes, showIsochrones }) {
-  const el = useRef(null); const mapRef = useRef(null);
+export default function MapView({ mode, sections, services, boundary, indicator, selectedProfiles=[], selectedSectionIds=[], onSelectSection, onSelectPoi }) {
+  const el = useRef(null);
+  const mapRef = useRef(null);
+  const markersRef = useRef([]);
 
   useEffect(()=>{
     if (!el.current || mapRef.current) return;
-    const map = new maplibregl.Map({ container:el.current, style:'https://tiles.openfreemap.org/styles/liberty', center:[11.15,46.067], zoom:13.2 });
+    const map = new maplibregl.Map({
+      container: el.current,
+      style: 'https://tiles.openfreemap.org/styles/liberty',
+      center: INITIAL_CENTER,
+      zoom: INITIAL_ZOOM,
+      minZoom: INITIAL_ZOOM - 2,
+      maxZoom: 18,
+      attributionControl: true,
+    });
     map.addControl(new maplibregl.NavigationControl({showCompass:false}), 'top-right');
-    map.on('load',()=>{ if(boundary) { const b=bbox(boundary); map.fitBounds([[b[0],b[1]],[b[2],b[3]]],{padding:35,duration:0}); } });
-    mapRef.current=map; return()=>{map.remove();mapRef.current=null};
+    mapRef.current = map;
+    return ()=>{ markersRef.current.forEach(m=>m.remove()); map.remove(); mapRef.current=null; };
   },[]);
 
   useEffect(()=>{
-    const map=mapRef.current; if(!map || !map.loaded() || !sections) return;
+    const map=mapRef.current;
+    if(!map || !boundary) return;
+    const ready=()=>{
+      if(map.getSource('boundary')) map.getSource('boundary').setData(boundary);
+      else map.addSource('boundary',{type:'geojson',data:boundary});
+      ['boundary-halo','boundary-line'].forEach(id=>{if(map.getLayer(id))map.removeLayer(id)});
+      map.addLayer({id:'boundary-halo',type:'line',source:'boundary',paint:{'line-color':'#ffffff','line-width':6,'line-opacity':0.95}});
+      map.addLayer({id:'boundary-line',type:'line',source:'boundary',paint:{'line-color':'#111111','line-width':3.2,'line-dasharray':[2.5,1.5]}});
+      const b=bbox(boundary);
+      map.setMaxBounds([[b[0]-0.035,b[1]-0.025],[b[2]+0.035,b[3]+0.025]]);
+      map.fitBounds([[b[0],b[1]],[b[2],b[3]]],{padding:45,duration:0,maxZoom:INITIAL_ZOOM});
+    };
+    map.isStyleLoaded()?ready():map.once('load',ready);
+  },[boundary]);
+
+  useEffect(()=>{
+    const map=mapRef.current;
+    if(!map || !sections) return;
     const ready=()=>{
       const data={...sections,features:sections.features.map(f=>({...f,properties:{...f.properties,__value:Number(f.properties?.[indicator])||0,__id:String(f.properties?.SEZ21_ID ?? f.properties?.SEZ21)}}))};
-      if(map.getSource('sections')) map.getSource('sections').setData(data); else map.addSource('sections',{type:'geojson',data,promoteId:'__id'});
+      if(map.getSource('sections')) map.getSource('sections').setData(data); else map.addSource('sections',{type:'geojson',data});
       ['sections-fill','sections-outline'].forEach(id=>{if(map.getLayer(id))map.removeLayer(id)});
       const meta=indicators[indicator];
-      let fill;
-      if(meta?.kind==='categorical') fill=['match',['get',indicator],...Object.keys(data.features.reduce((a,f)=>(a[f.properties[indicator]]=1,a),{})).flatMap((k,i)=>[k,CLUSTER_COLORS[i%CLUSTER_COLORS.length]]),'#ccc'];
-      else fill=continuousExpression(quantileBreaks(data.features,indicator,5),meta?.inverse);
-      map.addLayer({id:'sections-fill',type:'fill',source:'sections',paint:{'fill-color':fill,'fill-opacity':mode==='services'?0.12:0.66}});
-      map.addLayer({id:'sections-outline',type:'line',source:'sections',paint:{'line-color':['case',['in',['get','__id'],['literal',selectedSectionIds]],'#111827','#ffffff'],'line-width':['case',['in',['get','__id'],['literal',selectedSectionIds]],2.5,0.8]}});
+      const cats=[...new Set(data.features.map(f=>f.properties?.[indicator]).filter(Boolean))];
+      const colors=['#1a0dab','#6b5bd2','#2b7a78','#d28537','#8d4b7b','#566573'];
+      const fill=meta?.kind==='categorical'
+        ? ['match',['get',indicator],...cats.flatMap((k,i)=>[k,colors[i%colors.length]]),'#d5d8df']
+        : continuousExpression(quantileBreaks(data.features,indicator,5),meta?.inverse);
+      map.addLayer({id:'sections-fill',type:'fill',source:'sections',layout:{visibility:mode==='sections'?'visible':'none'},paint:{'fill-color':fill,'fill-opacity':0.68}},'boundary-halo');
+      map.addLayer({id:'sections-outline',type:'line',source:'sections',layout:{visibility:mode==='sections'?'visible':'none'},paint:{'line-color':['case',['in',['get','__id'],['literal',selectedSectionIds]],'#111827','#ffffff'],'line-width':['case',['in',['get','__id'],['literal',selectedSectionIds]],3,0.8]}},'boundary-halo');
       const filter=selectedProfiles.length?['in',['get','profilo_pubblico'],['literal',selectedProfiles]]:null;
       map.setFilter('sections-fill',filter); map.setFilter('sections-outline',filter);
       map.off('click','sections-fill'); map.on('click','sections-fill',e=>{const f=e.features?.[0]; if(f) onSelectSection?.(f.properties.__id,f.properties)});
@@ -43,36 +98,34 @@ export default function MapView({ sections, services, boundary, campus, isochron
       map.off('mouseleave','sections-fill'); map.on('mouseleave','sections-fill',()=>map.getCanvas().style.cursor='');
     };
     map.isStyleLoaded()?ready():map.once('load',ready);
-  },[sections,indicator,mode,selectedProfiles,selectedSectionIds]);
+  },[sections,indicator,mode,selectedProfiles,selectedSectionIds,onSelectSection]);
 
   useEffect(()=>{
-    const map=mapRef.current; if(!map || !map.loaded() || !services) return;
-    const ready=()=>{
-      if(map.getSource('services')) map.getSource('services').setData(services); else map.addSource('services',{type:'geojson',data:services});
-      if(map.getLayer('services'))map.removeLayer('services');
-      map.addLayer({id:'services',type:'circle',source:'services',layout:{visibility:mode==='services'?'visible':'none'},paint:{'circle-radius':['interpolate',['linear'],['to-number',['get','indice_civico_score'],0],0,4,100,10],'circle-color':['match',['get','categoria_indice_civico'],'Presidio civico ad alta intensità','#1a0dab','Servizio civico-relazionale','#6b5bd2','Servizio di utilità territoriale','#2b7a78','#d28537'],'circle-stroke-color':'#fff','circle-stroke-width':1.4}});
-      map.off('click','services'); map.on('click','services',e=>{const p=e.features?.[0]?.properties||{}; new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<strong>${p.nome||'Servizio'}</strong><br>${p.mapcategory||''}<br>Indice civico: ${number(p.indice_civico_score,1)}`).addTo(map)});
-    }; map.isStyleLoaded()?ready():map.once('load',ready);
-  },[services,mode]);
-
-  useEffect(()=>{
-    const map=mapRef.current; if(!map || !campus) return;
-    const ready=()=>{
-      if(map.getSource('campus'))map.getSource('campus').setData(campus);else map.addSource('campus',{type:'geojson',data:campus});
-      if(map.getLayer('campus'))map.removeLayer('campus');
-      map.addLayer({id:'campus',type:'circle',source:'campus',layout:{visibility:mode==='accessibility'?'visible':'none'},paint:{'circle-radius':7,'circle-color':'#111827','circle-stroke-color':'#fff','circle-stroke-width':2}});
-    }; map.isStyleLoaded()?ready():map.once('load',ready);
-  },[campus,mode]);
-
-  useEffect(()=>{
-    const map=mapRef.current; if(!map || !isochrones) return;
-    const ready=()=>{
-      if(map.getSource('isochrones'))map.getSource('isochrones').setData(isochrones);else map.addSource('isochrones',{type:'geojson',data:isochrones});
-      ['iso-fill','iso-line'].forEach(id=>{if(map.getLayer(id))map.removeLayer(id)});
-      map.addLayer({id:'iso-fill',type:'fill',source:'isochrones',layout:{visibility:mode==='accessibility'&&showIsochrones?'visible':'none'},filter:['all',['==',['get','origine'],origin],['==',['to-number',['get','minuti']],minutes]],paint:{'fill-color':'#1a0dab','fill-opacity':0.24}});
-      map.addLayer({id:'iso-line',type:'line',source:'isochrones',layout:{visibility:mode==='accessibility'&&showIsochrones?'visible':'none'},filter:['all',['==',['get','origine'],origin],['==',['to-number',['get','minuti']],minutes]],paint:{'line-color':'#1a0dab','line-width':2}});
-    }; map.isStyleLoaded()?ready():map.once('load',ready);
-  },[isochrones,mode,origin,minutes,showIsochrones]);
+    const map=mapRef.current;
+    if(!map || !services) return;
+    markersRef.current.forEach(m=>m.remove());
+    markersRef.current=[];
+    if(mode!=='services') return;
+    services.features.forEach(feature=>{
+      const p=feature.properties||{};
+      const color=CIVIC_COLORS[p.categoria_indice_civico]||'#52606d';
+      const node=document.createElement('button');
+      node.className='poi-marker';
+      node.type='button';
+      node.title=p.nome||'Punto di interesse';
+      node.innerHTML=markerHtml(p.mapcategory,color);
+      node.addEventListener('click',e=>{
+        e.stopPropagation();
+        onSelectPoi?.(p);
+        new maplibregl.Popup({offset:22,maxWidth:'320px'})
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(`<div class="poi-popup"><strong>${p.nome||'Servizio'}</strong><span>${p.mapcategory||'Categoria non indicata'}</span><dl><dt>Profilo civico</dt><dd>${p.categoria_indice_civico||'–'}</dd><dt>Indice civico</dt><dd>${number(p.indice_civico_score,1)}</dd><dt>Natura</dt><dd>${p.natura_calcolata||'–'}</dd><dt>Utenza</dt><dd>${p.utenza_prevalente_calcolata||'–'}</dd></dl></div>`)
+          .addTo(map);
+      });
+      const marker=new maplibregl.Marker({element:node,anchor:'bottom'}).setLngLat(feature.geometry.coordinates).addTo(map);
+      markersRef.current.push(marker);
+    });
+  },[services,mode,onSelectPoi]);
 
   return <div ref={el} className="map" />;
 }
