@@ -1,2 +1,11 @@
 *.tif
 *.tiff
+
+node_modules/
+dist/
+
+**/node_modules/
+**/dist/
+*.tif
+*.tiff
+**/.git-backup/

@@ -1,0 +1,9 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"fbk","nome":"FBK"},"geometry":{"type":"Point","coordinates":[11.150684,46.067436]}},
+    {"type":"Feature","properties":{"id":"povo1","nome":"Povo 1"},"geometry":{"type":"Point","coordinates":[11.150316,46.066894]}},
+    {"type":"Feature","properties":{"id":"povo2","nome":"Povo 2"},"geometry":{"type":"Point","coordinates":[11.150399,46.067883]}},
+    {"type":"Feature","properties":{"id":"povo0","nome":"Povo 0"},"geometry":{"type":"Point","coordinates":[11.150541,46.065270]}}
+  ]
+}
