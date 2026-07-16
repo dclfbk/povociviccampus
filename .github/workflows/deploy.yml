@@ -19,10 +19,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: povo-civic-campus-dashboard
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,9 +31,11 @@ jobs:
           cache-dependency-path: povo-civic-campus-dashboard/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        working-directory: povo-civic-campus-dashboard
+        run: npm ci --no-audit --no-fund
 
       - name: Build application
+        working-directory: povo-civic-campus-dashboard
         run: npm run build
 
       - name: Configure GitHub Pages
