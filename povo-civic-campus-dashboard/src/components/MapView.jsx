@@ -27,6 +27,11 @@ const ICON_SVG = {
 };
 const RAMP = ['#f0efff','#c9c4f5','#9388e2','#5f4bc7','#1a0dab'];
 
+function serviceId(feature){
+  const p=feature.properties||{};
+  return String(feature.id ?? p.fsq_place_id ?? p.id ?? `${p.nome||'poi'}-${feature.geometry?.coordinates?.join('-')||''}`);
+}
+
 function markerHtml(category, color) {
   const icon = ICON_SVG[CATEGORY_ICONS[category]] || ICON_SVG.landmark;
   return `<div class="poi-pin" style="--pin:${color}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${icon}</svg></div>`;
@@ -39,7 +44,7 @@ function continuousExpression(breaks, inverse=false) {
   return ['interpolate',['linear'],['to-number',['get','__value'],0], ...stops];
 }
 
-export default function MapView({ mode, sections, services, boundary, indicator, selectedProfiles=[], selectedSectionIds=[], onSelectSection, onSelectPoi }) {
+export default function MapView({ mode, sections, services, boundary, indicator, selectedProfiles=[], selectedSectionIds=[], selectedPoiIds=[], onSelectSection, onTogglePoi }) {
   const el = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef([]);
@@ -108,15 +113,17 @@ export default function MapView({ mode, sections, services, boundary, indicator,
     if(mode!=='services') return;
     services.features.forEach(feature=>{
       const p=feature.properties||{};
+      const id=serviceId(feature);
+      const selected=selectedPoiIds.includes(id);
       const color=CIVIC_COLORS[p.categoria_indice_civico]||'#52606d';
       const node=document.createElement('button');
-      node.className='poi-marker';
+      node.className=`poi-marker${selected?' selected':''}`;
       node.type='button';
       node.title=p.nome||'Punto di interesse';
       node.innerHTML=markerHtml(p.mapcategory,color);
       node.addEventListener('click',e=>{
         e.stopPropagation();
-        onSelectPoi?.(p);
+        onTogglePoi?.(id,p);
         new maplibregl.Popup({offset:22,maxWidth:'320px'})
           .setLngLat(feature.geometry.coordinates)
           .setHTML(`<div class="poi-popup"><strong>${p.nome||'Servizio'}</strong><span>${p.mapcategory||'Categoria non indicata'}</span><dl><dt>Profilo civico</dt><dd>${p.categoria_indice_civico||'–'}</dd><dt>Indice civico</dt><dd>${number(p.indice_civico_score,1)}</dd><dt>Natura</dt><dd>${p.natura_calcolata||'–'}</dd><dt>Utenza</dt><dd>${p.utenza_prevalente_calcolata||'–'}</dd></dl></div>`)
@@ -125,7 +132,7 @@ export default function MapView({ mode, sections, services, boundary, indicator,
       const marker=new maplibregl.Marker({element:node,anchor:'bottom'}).setLngLat(feature.geometry.coordinates).addTo(map);
       markersRef.current.push(marker);
     });
-  },[services,mode,onSelectPoi]);
+  },[services,mode,selectedPoiIds,onTogglePoi]);
 
   return <div ref={el} className="map" />;
 }

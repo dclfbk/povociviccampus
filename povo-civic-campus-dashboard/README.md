@@ -1,6 +1,7 @@
 # Povo Civic Campus Dashboard
 
 Dashboard React/Vite con:
+
 - MapLibre GL JS e stile OpenFreeMap Liberty;
 - ECharts;
 - mappa delle 95 sezioni di censimento;

@@ -23,6 +23,18 @@ function filterServices(features, filters, ignored=null){
     return filters[key].includes(f.properties?.[meta.field]||'Non classificato');
   }));
 }
+function serviceId(feature){
+  const p=feature.properties||{};
+  return String(feature.id ?? p.fsq_place_id ?? p.id ?? `${p.nome||'poi'}-${feature.geometry?.coordinates?.join('-')||''}`);
+}
+function MultiSelect({label,values,selected,onToggle}){
+  return <details className="multi-select">
+    <summary>{label}<span>{selected.length ? `${selected.length} selezionati` : 'Tutti'}</span></summary>
+    <div className="multi-options">
+      {values.map(value=><label key={value}><input type="checkbox" checked={selected.includes(value)} onChange={()=>onToggle(value)}/><span>{value}</span></label>)}
+    </div>
+  </details>;
+}
 
 export default function App(){
   const [data,setData]=useState({});
@@ -33,6 +45,7 @@ export default function App(){
   const [selectedIds,setSelectedIds]=useState([]);
   const [selectedProps,setSelectedProps]=useState(null);
   const [selectedPoi,setSelectedPoi]=useState(null);
+  const [selectedPoiIds,setSelectedPoiIds]=useState([]);
   const [filters,setFilters]=useState({category:[],civic:[],nature:[],users:[]});
 
   useEffect(()=>{Promise.all([
@@ -42,16 +55,36 @@ export default function App(){
   const sections=data.sections?.features||[];
   const allServices=data.services?.features||[];
   const visibleServices=useMemo(()=>filterServices(allServices,filters),[allServices,filters]);
+  const selectedServices=useMemo(()=>{
+    if(!selectedPoiIds.length) return [];
+    const chosen=new Set(selectedPoiIds);
+    return visibleServices.filter(f=>chosen.has(serviceId(f)));
+  },[visibleServices,selectedPoiIds]);
+  const analysisServices=selectedPoiIds.length ? selectedServices : visibleServices;
   const visibleSections=useMemo(()=>profiles.length?sections.filter(f=>profiles.includes(f.properties?.profilo_pubblico)):sections,[sections,profiles]);
   const activeFilterCount=Object.values(filters).reduce((n,v)=>n+v.length,0);
+
+  useEffect(()=>{
+    if(!selectedPoiIds.length) return;
+    const allowed=new Set(visibleServices.map(serviceId));
+    setSelectedPoiIds(ids=>ids.filter(id=>allowed.has(id)));
+  },[visibleServices]);
 
   function toggleFilter(key,value){
     setFilters(current=>({...current,[key]:current[key].includes(value)?current[key].filter(v=>v!==value):[...current[key],value]}));
   }
-  function resetFilters(){setFilters({category:[],civic:[],nature:[],users:[]});setSelectedPoi(null)}
+  function resetFilters(){setFilters({category:[],civic:[],nature:[],users:[]});setSelectedPoi(null);setSelectedPoiIds([])}
+  function togglePoi(id,props){
+    setSelectedPoi(props);
+    setSelectedPoiIds(ids=>ids.includes(id)?ids.filter(x=>x!==id):[...ids,id]);
+  }
+  function clearMapSelection(){setSelectedPoiIds([]);setSelectedPoi(null)}
   function toggleProfile(name){setProfiles(p=>p.includes(name)?p.filter(x=>x!==name):[...p,name]);}
   function selectSection(id,props){setSelectedIds([id]);setSelectedProps(props)}
-  function distributionFor(key){return rows(filterServices(allServices,filters,key),SERVICE_DIMENSIONS[key].field)}
+  function distributionFor(key){
+    const base=selectedPoiIds.length ? analysisServices : filterServices(allServices,filters,key);
+    return rows(base,SERVICE_DIMENSIONS[key].field);
+  }
 
   if(error)return <div className="fatal">Errore: {error}</div>;
   if(!data.sections)return <div className="loading">Caricamento dati territoriali…</div>;
@@ -72,23 +105,23 @@ export default function App(){
           <div className="reading-key"><b>Come leggere la vista</b><span>Icona → categoria del servizio</span><span>Colore → profilo civico</span><span>Barra percentuale → composizione</span><span>Barre ordinate → valori assoluti</span><span>Tratteggio nero → confine circoscrizionale</span></div>
         </section>
         <section className="kpi-grid">
-          <article><strong>{visibleServices.length}</strong><span>servizi mostrati su {allServices.length}</span></article>
-          <article><strong>{new Set(visibleServices.map(f=>f.properties.mapcategory)).size}</strong><span>categorie visibili</span></article>
-          <article><strong>{number(visibleServices.reduce((a,f)=>a+(Number(f.properties.indice_civico_score)||0),0)/(visibleServices.length||1),1)}</strong><span>indice civico medio</span></article>
+          <article><strong>{analysisServices.length}</strong><span>{selectedPoiIds.length?'POI selezionati':'servizi mostrati'} su {allServices.length}</span></article>
+          <article><strong>{new Set(analysisServices.map(f=>f.properties.mapcategory)).size}</strong><span>categorie rappresentate</span></article>
+          <article><strong>{number(analysisServices.reduce((a,f)=>a+(Number(f.properties.indice_civico_score)||0),0)/(analysisServices.length||1),1)}</strong><span>indice civico medio</span></article>
           <article><strong>{activeFilterCount}</strong><span>filtri attivi</span></article>
         </section>
         <section className="filter-summary">
-          <div><b>Stai osservando:</b> {visibleServices.length} di {allServices.length} servizi</div>
-          <div className="chips">{Object.entries(filters).flatMap(([key,values])=>values.map(v=><button key={`${key}-${v}`} onClick={()=>toggleFilter(key,v)}>{SERVICE_DIMENSIONS[key].label}: {v} ×</button>))}{activeFilterCount===0&&<span>Nessun filtro applicato</span>}</div>
-          {activeFilterCount>0&&<button className="clear-all" onClick={resetFilters}>Rimuovi tutti i filtri</button>}
+          <div><b>Stai osservando:</b> {selectedPoiIds.length ? `${analysisServices.length} POI selezionati sulla mappa` : `${visibleServices.length} di ${allServices.length} servizi risultanti dai filtri`}</div>
+          <div className="chips">{Object.entries(filters).flatMap(([key,values])=>values.map(v=><button key={`${key}-${v}`} onClick={()=>toggleFilter(key,v)}>{SERVICE_DIMENSIONS[key].label}: {v} ×</button>))}{activeFilterCount===0&&<span>Nessun filtro applicato</span>}{selectedPoiIds.length>0&&<button onClick={clearMapSelection}>Selezione mappa: {selectedPoiIds.length} POI ×</button>}</div>
+          {(activeFilterCount>0||selectedPoiIds.length>0)&&<button className="clear-all" onClick={resetFilters}>Azzera filtri e selezione</button>}
         </section>
         <section className="service-workspace">
           <div className="map-shell">
             <div className="map-toolbar filter-toolbar">
-              {Object.entries(SERVICE_DIMENSIONS).map(([key,meta])=><label key={key}>{meta.label}<select value="" onChange={e=>{if(e.target.value)toggleFilter(key,e.target.value)}}><option value="">Tutti</option>{unique(allServices,meta.field).map(v=><option key={v} value={v}>{v}</option>)}</select></label>)}
-              <button className="reset" onClick={resetFilters} disabled={!activeFilterCount}>Azzera filtri</button>
+              {Object.entries(SERVICE_DIMENSIONS).map(([key,meta])=><MultiSelect key={key} label={meta.label} values={unique(allServices,meta.field)} selected={filters[key]} onToggle={v=>toggleFilter(key,v)}/>)}
+              <button className="reset" onClick={resetFilters} disabled={!activeFilterCount&&!selectedPoiIds.length}>Azzera tutto</button>
             </div>
-            <MapView mode="services" services={{...data.services,features:visibleServices}} sections={data.sections} boundary={data.boundary} indicator={indicator} onSelectPoi={setSelectedPoi}/>
+            <MapView mode="services" services={{...data.services,features:visibleServices}} sections={data.sections} boundary={data.boundary} indicator={indicator} selectedPoiIds={selectedPoiIds} onTogglePoi={togglePoi}/>
             <div className="map-legend">
               <b>Profilo civico</b>
               <span><i style={{background:'#1a0dab'}}/>Presidio civico ad alta intensità</span>
@@ -99,7 +132,7 @@ export default function App(){
           </div>
           <aside className="map-context">
             <h3>Cosa stai vedendo</h3>
-            <p>I punti mostrati rispettano contemporaneamente tutti i filtri attivi. Selezioni multiple nella stessa dimensione sono alternative; filtri di dimensioni diverse si combinano.</p>
+            <p>I punti mostrati rispettano contemporaneamente tutti i filtri attivi. Puoi selezionare più valori per ciascuna dimensione e più POI sulla mappa. Quando esiste una selezione cartografica, indicatori e grafici descrivono soltanto quei punti.</p><button className="map-selection-clear" onClick={clearMapSelection} disabled={!selectedPoiIds.length}>Azzera selezione sulla mappa</button>
             {selectedPoi?<div className="detail"><div className="eyebrow">POI selezionato</div><h3>{selectedPoi.nome}</h3><dl><dt>Categoria</dt><dd>{selectedPoi.mapcategory||'–'}</dd><dt>Profilo civico</dt><dd>{selectedPoi.categoria_indice_civico||'–'}</dd><dt>Indice</dt><dd>{number(selectedPoi.indice_civico_score,1)}</dd><dt>Natura</dt><dd>{selectedPoi.natura_calcolata||'–'}</dd><dt>Utenza</dt><dd>{selectedPoi.utenza_prevalente_calcolata||'–'}</dd><dt>Funzione relazionale</dt><dd>{selectedPoi.funzione_relazionale_calcolata||'–'}</dd></dl></div>:<div className="empty-detail">Seleziona un punto sulla mappa per leggerne la scheda.</div>}
           </aside>
         </section>
