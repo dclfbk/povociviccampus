@@ -1304,11 +1304,11 @@
     {
       "type": "Feature",
       "properties": {
-        "nome": "Pizza Rio",
+        "nome": "Pizzeria Orostube",
         "mapcategory": "Ristorazione e agriturismi",
         "servizio": "Ristorazione e agriturismi",
         "attore": "Privato",
-        "indirizzo": "Via della Resistenza 9/A",
+        "indirizzo": "Via Sommarive 10",
         "referente": "Reale Leonardo  tel.0461811555 cell. 3457641322",
         "contatti": "-",
         "accesso": "Accesso libero",
@@ -1324,7 +1324,7 @@
         "periodo_apertura": "Sempre aperto",
         "mesi_apertura": "-",
         "occasioni_apertura": "-",
-        "descrizione": "Offre soprattutto pizze da asporto con qualche tavolo per la consumazione sul posto non servita.",
+        "descrizione": "",
         "destinatari": "Tutte la età",
         "altri": "-",
         "disabili": "Si, in autonomia",
@@ -1361,8 +1361,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.150447,
-          46.064749
+          11.155074,
+          46.066329
         ]
       }
     },
