@@ -29,16 +29,18 @@ jobs:
           node-version: 22
           package-manager-cache: false
 
-      - name: Setup npm
-        run: npm install --global npm@10.9.2
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@9.15.4 --activate
 
       - name: Install dependencies
         working-directory: povo-civic-campus-dashboard
-        run: npm install --no-audit --no-fund
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build application
         working-directory: povo-civic-campus-dashboard
-        run: npm run build
+        run: pnpm run build
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
